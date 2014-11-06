@@ -14,6 +14,10 @@ sync:
 targets:
   _config:
     apt_target_repository: http://repos.ros.org/repos/building/
+  fedora:
+    heisenbug:
+      i386:
+      x86_64:
   ubuntu:
     precise:
       amd64:
