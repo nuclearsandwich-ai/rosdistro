@@ -3908,7 +3908,7 @@ lua-dev:
   ubuntu: [liblua5.1-0-dev]
 lua5.2-dev:
   debian: [liblua5.2-dev]
-  fedora: [lua]
+  fedora: [lua-devel]
   gentoo: ['dev-lang/lua:5.2']
   openembedded: [lua@meta-oe]
   ubuntu: [liblua5.2-dev]
