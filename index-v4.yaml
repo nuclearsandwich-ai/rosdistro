@@ -20,7 +20,7 @@ distributions:
     distribution_type: ros2
   dashing:
     distribution: [dashing/distribution.yaml]
-    distribution_cache: http://repo.ros2.org/rosdistro_cache/dashing-cache.yaml.gz
+    distribution_cache: https://github.com/cottsay/rosdistro/raw/cyclone_test/dashing/dashing-cache.yaml.gz
     distribution_status: active
     distribution_type: ros2
   eloquent:
