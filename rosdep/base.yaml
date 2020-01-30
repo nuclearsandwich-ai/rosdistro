@@ -3302,6 +3302,7 @@ libreadline:
   fedora: [readline]
   gentoo: [sys-libs/readline]
   macports: [readline]
+  rhel: [readline]
   ubuntu: [libreadline-dev]
 libreadline-dev:
   arch: [readline]
