@@ -29,7 +29,7 @@ distributions:
     python_version: 3
   eloquent:
     distribution: [eloquent/distribution.yaml]
-    distribution_cache: http://repo.ros2.org/rosdistro_cache/eloquent-cache.yaml.gz
+    distribution_cache: http://54.165.81.143/rosdistro_cache/eloquent-cache.yaml.gz
     distribution_status: active
     distribution_type: ros2
     python_version: 3
@@ -77,7 +77,7 @@ distributions:
     python_version: 2
   melodic:
     distribution: [melodic/distribution.yaml]
-    distribution_cache: http://repositories.ros.org/rosdistro_cache/melodic-cache.yaml.gz
+    distribution_cache: http://54.165.81.143/rosdistro_cache/melodic-cache.yaml.gz
     distribution_status: active
     distribution_type: ros1
     python_version: 2
