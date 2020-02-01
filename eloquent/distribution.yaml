@@ -3,6 +3,11 @@
 # see REP 143: http://ros.org/reps/rep-0143.html
 ---
 release_platforms:
+  fedora:
+  - '31'
+  rhel:
+  - '7'
+  - '8'
   ubuntu:
   - bionic
 repositories:
@@ -34,7 +39,7 @@ repositories:
       - ament_cmake_version
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/ament_cmake-release.git
+      url: https://github.com/ros2-gbp-rpm/ament_cmake-release.git
       version: 0.8.2-1
     source:
       type: git
@@ -52,7 +57,7 @@ repositories:
       - domain_coordinator
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/ament_cmake_ros-release.git
+      url: https://github.com/ros2-gbp-rpm/ament_cmake_ros-release.git
       version: 0.8.0-1
     source:
       test_pull_requests: true
@@ -71,7 +76,7 @@ repositories:
       - ament_index_python
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/ament_index-release.git
+      url: https://github.com/ros2-gbp-rpm/ament_index-release.git
       version: 0.7.2-1
     source:
       test_pull_requests: true
@@ -119,7 +124,7 @@ repositories:
       - ament_xmllint
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/ament_lint-release.git
+      url: https://github.com/ros2-gbp-rpm/ament_lint-release.git
       version: 0.8.1-1
     source:
       test_pull_requests: true
@@ -135,7 +140,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/ament_package-release.git
+      url: https://github.com/ros2-gbp-rpm/ament_package-release.git
       version: 0.8.8-1
     source:
       type: git
@@ -153,7 +158,7 @@ repositories:
       - ament_virtualenv
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/esol-community/ament_virtualenv-release.git
+      url: https://github.com/ros2-gbp-rpm/ament_virtualenv-release.git
       version: 0.0.5-6
     source:
       test_pull_requests: true
@@ -169,7 +174,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/angles-release.git
+      url: https://github.com/ros2-gbp-rpm/angles-release.git
       version: 1.12.2-1
     source:
       test_pull_requests: true
@@ -189,7 +194,7 @@ repositories:
       - automotive_platform_msgs
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/astuff/automotive_autonomy_msgs-release.git
+      url: https://github.com/ros2-gbp-rpm/automotive_autonomy_msgs-release.git
       version: 3.0.3-1
     source:
       type: git
@@ -204,7 +209,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/BehaviorTree/behaviortree_cpp_v3-release.git
+      url: https://github.com/ros2-gbp-rpm/behaviortree_cpp_v3-release.git
       version: 3.1.1-1
     source:
       type: git
@@ -219,7 +224,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/cartographer-release.git
+      url: https://github.com/ros2-gbp-rpm/cartographer-release.git
       version: 1.0.0-1
     source:
       test_pull_requests: true
@@ -238,7 +243,7 @@ repositories:
       - cartographer_ros_msgs
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/cartographer_ros-release.git
+      url: https://github.com/ros2-gbp-rpm/cartographer_ros-release.git
       version: 1.0.9000-1
     source:
       test_pull_requests: true
@@ -254,7 +259,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/class_loader-release.git
+      url: https://github.com/ros2-gbp-rpm/class_loader-release.git
       version: 1.4.1-1
     source:
       test_pull_requests: true
@@ -283,7 +288,7 @@ repositories:
       - visualization_msgs
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/common_interfaces-release.git
+      url: https://github.com/ros2-gbp-rpm/common_interfaces-release.git
       version: 0.8.1-1
     source:
       test_pull_requests: true
@@ -295,7 +300,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/console_bridge_vendor-release.git
+      url: https://github.com/ros2-gbp-rpm/console_bridge_vendor-release.git
       version: 1.2.0-1
     source:
       test_pull_requests: true
@@ -311,7 +316,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros-gbp/control_msgs-release.git
+      url: https://github.com/ros2-gbp-rpm/control_msgs-release.git
       version: 2.2.0-1
     source:
       type: git
@@ -329,7 +334,7 @@ repositories:
       - costmap_converter_msgs
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/rst-tu-dortmund/costmap_converter-ros2-release.git
+      url: https://github.com/ros2-gbp-rpm/costmap_converter-ros2-release.git
       version: 0.1.1-1
     source:
       test_pull_requests: true
@@ -341,7 +346,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros-tooling/cross_compile-release.git
+      url: https://github.com/ros2-gbp-rpm/cross_compile-release.git
       version: 0.2.0-1
     source:
       test_pull_requests: true
@@ -353,7 +358,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/cyclonedds-release.git
+      url: https://github.com/ros2-gbp-rpm/cyclonedds-release.git
       version: 0.1.0-7
     source:
       test_commits: false
@@ -390,7 +395,7 @@ repositories:
       - topic_monitor
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/demos-release.git
+      url: https://github.com/ros2-gbp-rpm/demos-release.git
       version: 0.8.4-1
     source:
       test_pull_requests: true
@@ -406,7 +411,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/depthimage_to_laserscan-release.git
+      url: https://github.com/ros2-gbp-rpm/depthimage_to_laserscan-release.git
       version: 2.2.5-1
     source:
       test_pull_requests: true
@@ -425,7 +430,7 @@ repositories:
       - self_test
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/diagnostics-release.git
+      url: https://github.com/ros2-gbp-rpm/diagnostics-release.git
       version: 2.0.1-1
     source:
       test_pull_requests: true
@@ -441,7 +446,7 @@ repositories:
       - dolly_gazebo
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/chapulina/dolly-release.git
+      url: https://github.com/ros2-gbp-rpm/dolly-release.git
       version: 0.2.0-1
     source:
       test_pull_requests: true
@@ -483,7 +488,7 @@ repositories:
       - ecl_utilities
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/yujinrobot-release/ecl_core-release.git
+      url: https://github.com/ros2-gbp-rpm/ecl_core-release.git
       version: 1.0.6-1
     source:
       test_pull_requests: true
@@ -508,7 +513,7 @@ repositories:
       - ecl_time_lite
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/yujinrobot-release/ecl_lite-release.git
+      url: https://github.com/ros2-gbp-rpm/ecl_lite-release.git
       version: 1.0.5-1
     source:
       test_pull_requests: true
@@ -528,7 +533,7 @@ repositories:
       - ecl_tools
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/yujinrobot-release/ecl_tools-release.git
+      url: https://github.com/ros2-gbp-rpm/ecl_tools-release.git
       version: 1.0.2-1
     source:
       test_pull_requests: true
@@ -544,7 +549,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/eigen3_cmake_module-release.git
+      url: https://github.com/ros2-gbp-rpm/eigen3_cmake_module-release.git
       version: 0.1.1-1
     source:
       test_pull_requests: true
@@ -560,7 +565,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/eigen_stl_containers-release.git
+      url: https://github.com/ros2-gbp-rpm/eigen_stl_containers-release.git
       version: 1.0.0-1
     source:
       test_pull_requests: true
@@ -576,7 +581,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/example_interfaces-release.git
+      url: https://github.com/ros2-gbp-rpm/example_interfaces-release.git
       version: 0.7.1-1
     source:
       test_pull_requests: true
@@ -609,7 +614,7 @@ repositories:
       - examples_rclpy_minimal_subscriber
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/examples-release.git
+      url: https://github.com/ros2-gbp-rpm/examples-release.git
       version: 0.8.2-1
     source:
       type: git
@@ -620,7 +625,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/fastcdr-release.git
+      url: https://github.com/ros2-gbp-rpm/fastcdr-release.git
       version: 1.0.11-1
     source:
       test_commits: false
@@ -633,7 +638,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/fastrtps-release.git
+      url: https://github.com/ros2-gbp-rpm/fastrtps-release.git
       version: 1.9.3-1
     source:
       test_commits: false
@@ -653,7 +658,7 @@ repositories:
       - fmi_adapter_examples
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/boschresearch/fmi_adapter_ros2-release.git
+      url: https://github.com/ros2-gbp-rpm/fmi_adapter_ros2-release.git
       version: 0.1.7-2
     source:
       type: git
@@ -664,13 +669,13 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/boschresearch/fmilibrary_vendor-release.git
+      url: https://github.com/ros2-gbp-rpm/fmilibrary_vendor-release.git
       version: 0.2.0-1
   foonathan_memory_vendor:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/foonathan_memory_vendor-release.git
+      url: https://github.com/ros2-gbp-rpm/foonathan_memory_vendor-release.git
       version: 0.3.0-1
     source:
       type: git
@@ -691,7 +696,7 @@ repositories:
       - gazebo_ros_pkgs
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/gazebo_ros_pkgs-release.git
+      url: https://github.com/ros2-gbp-rpm/gazebo_ros_pkgs-release.git
       version: 3.4.2-1
     source:
       test_pull_requests: true
@@ -707,7 +712,7 @@ repositories:
       - geographic_msgs
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros-geographic-info/geographic_info-release.git
+      url: https://github.com/ros2-gbp-rpm/geographic_info-release.git
       version: 1.0.1-1
     status: maintained
   geometry2:
@@ -729,7 +734,7 @@ repositories:
       - tf2_sensor_msgs
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/geometry2-release.git
+      url: https://github.com/ros2-gbp-rpm/geometry2-release.git
       version: 0.12.5-1
     source:
       test_pull_requests: true
@@ -744,7 +749,7 @@ repositories:
       - gtest_vendor
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/googletest-release.git
+      url: https://github.com/ros2-gbp-rpm/googletest-release.git
       version: 1.8.9000-1
     source:
       type: git
@@ -764,7 +769,7 @@ repositories:
       - image_transport
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/image_common-release.git
+      url: https://github.com/ros2-gbp-rpm/image_common-release.git
       version: 2.2.1-1
     source:
       test_pull_requests: true
@@ -785,7 +790,7 @@ repositories:
       - theora_image_transport
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/image_transport_plugins-release.git
+      url: https://github.com/ros2-gbp-rpm/image_transport_plugins-release.git
       version: 2.2.1-1
     source:
       test_pull_requests: true
@@ -801,7 +806,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/interactive_markers-release.git
+      url: https://github.com/ros2-gbp-rpm/interactive_markers-release.git
       version: 2.0.1-1
     source:
       test_pull_requests: true
@@ -819,7 +824,7 @@ repositories:
       - joy
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/joystick_drivers-release.git
+      url: https://github.com/ros2-gbp-rpm/joystick_drivers-release.git
       version: 2.3.2-3
     source:
       test_pull_requests: true
@@ -835,7 +840,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/kdl_parser-release.git
+      url: https://github.com/ros2-gbp-rpm/kdl_parser-release.git
       version: 2.2.0-1
     source:
       test_pull_requests: true
@@ -855,7 +860,7 @@ repositories:
       - kobuki_driver
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/stonier/kobuki_core-release.git
+      url: https://github.com/ros2-gbp-rpm/kobuki_core-release.git
       version: 1.0.0-1
     source:
       test_pull_requests: true
@@ -871,7 +876,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/stonier/kobuki_ftdi-release.git
+      url: https://github.com/ros2-gbp-rpm/kobuki_ftdi-release.git
       version: 1.0.0-1
     source:
       type: git
@@ -886,7 +891,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/stonier/kobuki_ros-release.git
+      url: https://github.com/ros2-gbp-rpm/kobuki_ros-release.git
       version: 1.0.0-2
     source:
       test_pull_requests: true
@@ -902,7 +907,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/stonier/kobuki_ros_interfaces-release.git
+      url: https://github.com/ros2-gbp-rpm/kobuki_ros_interfaces-release.git
       version: 1.0.0-1
     source:
       test_pull_requests: true
@@ -918,7 +923,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/laser_geometry-release.git
+      url: https://github.com/ros2-gbp-rpm/laser_geometry-release.git
       version: 2.1.0-1
     source:
       test_pull_requests: true
@@ -940,7 +945,7 @@ repositories:
       - launch_yaml
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/launch-release.git
+      url: https://github.com/ros2-gbp-rpm/launch-release.git
       version: 0.9.6-1
     source:
       test_pull_requests: true
@@ -960,7 +965,7 @@ repositories:
       - ros2launch
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/launch_ros-release.git
+      url: https://github.com/ros2-gbp-rpm/launch_ros-release.git
       version: 0.9.5-1
     source:
       test_pull_requests: true
@@ -972,14 +977,14 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/libg2o-release.git
+      url: https://github.com/ros2-gbp-rpm/libg2o-release.git
       version: 2019.11.23-4
     status: maintained
   libyaml_vendor:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/libyaml_vendor-release.git
+      url: https://github.com/ros2-gbp-rpm/libyaml_vendor-release.git
       version: 1.0.0-1
     source:
       test_abi: true
@@ -995,7 +1000,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/mavlink/mavlink-gbp-release.git
+      url: https://github.com/ros2-gbp-rpm/mavlink-gbp-release.git
       version: 2020.1.16-2
     source:
       type: git
@@ -1010,7 +1015,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/ros2_message_filters-release.git
+      url: https://github.com/ros2-gbp-rpm/ros2_message_filters-release.git
       version: 3.2.3-1
     source:
       test_pull_requests: true
@@ -1056,7 +1061,7 @@ repositories:
       - navigation2
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/SteveMacenski/navigation2-release.git
+      url: https://github.com/ros2-gbp-rpm/navigation2-release.git
       version: 0.3.2-1
     source:
       test_pull_requests: true
@@ -1075,7 +1080,7 @@ repositories:
       - move_base_msgs
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/navigation_msgs-release.git
+      url: https://github.com/ros2-gbp-rpm/navigation_msgs-release.git
       version: 2.0.2-1
     source:
       test_pull_requests: true
@@ -1091,7 +1096,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/SteveMacenski/nonpersistent_voxel_layer-release.git
+      url: https://github.com/ros2-gbp-rpm/nonpersistent_voxel_layer-release.git
       version: 2.1.0-2
     source:
       test_pull_requests: true
@@ -1107,7 +1112,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/vooon/ntpd_driver-release.git
+      url: https://github.com/ros2-gbp-rpm/ntpd_driver-release.git
       version: 2.0.1-1
     source:
       type: git
@@ -1126,7 +1131,7 @@ repositories:
       - octovis
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros-gbp/octomap-release.git
+      url: https://github.com/ros2-gbp-rpm/octomap-release.git
       version: 1.9.3-1
     source:
       type: git
@@ -1143,7 +1148,7 @@ repositories:
       - orocos_kdl
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/orocos_kinematics_dynamics-release.git
+      url: https://github.com/ros2-gbp-rpm/orocos_kinematics_dynamics-release.git
       version: 3.2.1-1
     source:
       test_pull_requests: true
@@ -1159,7 +1164,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/osrf_pycommon-release.git
+      url: https://github.com/ros2-gbp-rpm/osrf_pycommon-release.git
       version: 0.1.9-2
     source:
       test_pull_requests: true
@@ -1178,7 +1183,7 @@ repositories:
       - test_osrf_testing_tools_cpp
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/osrf_testings_tools_cpp-release.git
+      url: https://github.com/ros2-gbp-rpm/osrf_testing_tools_cpp-release.git
       version: 1.2.1-1
     source:
       test_pull_requests: true
@@ -1194,7 +1199,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/pcl_msgs-release.git
+      url: https://github.com/ros2-gbp-rpm/pcl_msgs-release.git
       version: 1.0.0-1
     source:
       type: git
@@ -1211,7 +1216,7 @@ repositories:
       - perception_pcl
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/perception_pcl-release.git
+      url: https://github.com/ros2-gbp-rpm/perception_pcl-release.git
       version: 2.1.0-1
     source:
       test_pull_requests: true
@@ -1243,7 +1248,7 @@ repositories:
       - phidgets_temperature
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/phidgets_drivers-release.git
+      url: https://github.com/ros2-gbp-rpm/phidgets_drivers-release.git
       version: 2.0.1-1
     source:
       test_pull_requests: true
@@ -1259,7 +1264,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/pluginlib-release.git
+      url: https://github.com/ros2-gbp-rpm/pluginlib-release.git
       version: 2.4.1-1
     source:
       test_pull_requests: true
@@ -1271,7 +1276,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/poco_vendor-release.git
+      url: https://github.com/ros2-gbp-rpm/poco_vendor-release.git
       version: 1.2.0-1
     source:
       test_pull_requests: true
@@ -1287,7 +1292,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/fmrico/popf-release.git
+      url: https://github.com/ros2-gbp-rpm/popf-release.git
       version: 0.0.11-1
     source:
       type: git
@@ -1298,7 +1303,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/PX4/px4_msgs2-release.git
+      url: https://github.com/ros2-gbp-rpm/px4_msgs2-release.git
       version: 2.0.1-1
     status: developed
   py_trees:
@@ -1309,7 +1314,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/stonier/py_trees-release.git
+      url: https://github.com/ros2-gbp-rpm/py_trees-release.git
       version: 2.0.7-1
     source:
       type: git
@@ -1324,7 +1329,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/stonier/py_trees_js-release.git
+      url: https://github.com/ros2-gbp-rpm/py_trees_js-release.git
       version: 0.6.1-1
     source:
       type: git
@@ -1339,7 +1344,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/stonier/py_trees_ros-release.git
+      url: https://github.com/ros2-gbp-rpm/py_trees_ros-release.git
       version: 2.0.4-1
     source:
       test_pull_requests: true
@@ -1355,7 +1360,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/stonier/py_trees_ros_interfaces-release.git
+      url: https://github.com/ros2-gbp-rpm/py_trees_ros_interfaces-release.git
       version: 2.0.3-2
     source:
       type: git
@@ -1370,7 +1375,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/stonier/py_trees_ros_tutorials-release.git
+      url: https://github.com/ros2-gbp-rpm/py_trees_ros_tutorials-release.git
       version: 2.0.1-1
     source:
       test_pull_requests: true
@@ -1386,7 +1391,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/stonier/py_trees_ros_viewer-release.git
+      url: https://github.com/ros2-gbp-rpm/py_trees_ros_viewer-release.git
       version: 0.2.2-1
     source:
       type: git
@@ -1401,7 +1406,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/python_cmake_module-release.git
+      url: https://github.com/ros2-gbp-rpm/python_cmake_module-release.git
       version: 0.8.0-2
     source:
       type: git
@@ -1416,7 +1421,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/python_qt_binding-release.git
+      url: https://github.com/ros2-gbp-rpm/python_qt_binding-release.git
       version: 1.0.3-1
     source:
       test_pull_requests: true
@@ -1439,7 +1444,7 @@ repositories:
       - qt_gui_py_common
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/qt_gui_core-release.git
+      url: https://github.com/ros2-gbp-rpm/qt_gui_core-release.git
       version: 1.0.7-1
     source:
       test_pull_requests: true
@@ -1460,7 +1465,7 @@ repositories:
       - rcl_yaml_param_parser
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rcl-release.git
+      url: https://github.com/ros2-gbp-rpm/rcl-release.git
       version: 0.8.4-1
     source:
       test_abi: true
@@ -1485,7 +1490,7 @@ repositories:
       - test_msgs
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rcl_interfaces-release.git
+      url: https://github.com/ros2-gbp-rpm/rcl_interfaces-release.git
       version: 0.8.0-1
     source:
       test_pull_requests: true
@@ -1505,7 +1510,7 @@ repositories:
       - rcl_logging_spdlog
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rcl_logging-release.git
+      url: https://github.com/ros2-gbp-rpm/rcl_logging-release.git
       version: 0.3.3-1
     source:
       test_pull_requests: true
@@ -1526,7 +1531,7 @@ repositories:
       - rclcpp_lifecycle
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rclcpp-release.git
+      url: https://github.com/ros2-gbp-rpm/rclcpp-release.git
       version: 0.8.4-1
     source:
       test_pull_requests: true
@@ -1542,7 +1547,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rclpy-release.git
+      url: https://github.com/ros2-gbp-rpm/rclpy-release.git
       version: 0.8.4-1
     source:
       test_abi: true
@@ -1559,7 +1564,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rcpputils-release.git
+      url: https://github.com/ros2-gbp-rpm/rcpputils-release.git
       version: 0.2.1-1
     source:
       test_pull_requests: true
@@ -1575,7 +1580,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rcutils-release.git
+      url: https://github.com/ros2-gbp-rpm/rcutils-release.git
       version: 0.8.4-1
     source:
       test_pull_requests: true
@@ -1594,7 +1599,7 @@ repositories:
       - tlsf_cpp
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/realtime_support-release.git
+      url: https://github.com/ros2-gbp-rpm/realtime_support-release.git
       version: 0.8.2-1
     source:
       test_pull_requests: true
@@ -1610,7 +1615,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros-gbp/realtime_tools-release.git
+      url: https://github.com/ros2-gbp-rpm/realtime_tools-release.git
       version: 2.0.0-2
     source:
       type: git
@@ -1628,7 +1633,7 @@ repositories:
       - resource_retriever
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/resource_retriever-release.git
+      url: https://github.com/ros2-gbp-rpm/resource_retriever-release.git
       version: 2.2.1-1
     source:
       test_pull_requests: true
@@ -1647,7 +1652,7 @@ repositories:
       - rmw_implementation_cmake
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rmw-release.git
+      url: https://github.com/ros2-gbp-rpm/rmw-release.git
       version: 0.8.1-1
     source:
       test_pull_requests: true
@@ -1666,7 +1671,7 @@ repositories:
       - rmw_connext_shared_cpp
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rmw_connext-release.git
+      url: https://github.com/ros2-gbp-rpm/rmw_connext-release.git
       version: 0.8.1-1
     source:
       test_pull_requests: true
@@ -1685,7 +1690,7 @@ repositories:
       - rmw_cyclonedds_cpp
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rmw_cyclonedds-release.git
+      url: https://github.com/ros2-gbp-rpm/rmw_cyclonedds-release.git
       version: 0.4.4-1
     source:
       test_pull_requests: true
@@ -1705,7 +1710,7 @@ repositories:
       - rmw_fastrtps_shared_cpp
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rmw_fastrtps-release.git
+      url: https://github.com/ros2-gbp-rpm/rmw_fastrtps-release.git
       version: 0.8.1-1
     source:
       test_pull_requests: true
@@ -1721,7 +1726,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rmw_implementation-release.git
+      url: https://github.com/ros2-gbp-rpm/rmw_implementation-release.git
       version: 0.8.2-2
     source:
       test_pull_requests: true
@@ -1739,7 +1744,7 @@ repositories:
       - rmw_opensplice_cpp
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rmw_opensplice-release.git
+      url: https://github.com/ros2-gbp-rpm/rmw_opensplice-release.git
       version: 0.8.1-1
     source:
       test_pull_requests: true
@@ -1755,7 +1760,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/robot_state_publisher-release.git
+      url: https://github.com/ros2-gbp-rpm/robot_state_publisher-release.git
       version: 2.3.1-1
     source:
       test_pull_requests: true
@@ -1771,7 +1776,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/ros1_bridge-release.git
+      url: https://github.com/ros2-gbp-rpm/ros1_bridge-release.git
       version: 0.8.2-1
     source:
       test_pull_requests: true
@@ -1790,7 +1795,7 @@ repositories:
       - ros2_ouster
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/SteveMacenski/ros2_ouster_drivers-release.git
+      url: https://github.com/ros2-gbp-rpm/ros2_ouster_drivers-release.git
       version: 0.1.0-1
     source:
       test_pull_requests: true
@@ -1819,7 +1824,7 @@ repositories:
       - plansys2_terminal
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/IntelligentRoboticsLabs/ros2_planning_system-release.git
+      url: https://github.com/ros2-gbp-rpm/ros2_planning_system-release.git
       version: 0.0.5-1
     source:
       type: git
@@ -1841,7 +1846,7 @@ repositories:
       - tracetools_trace
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://gitlab.com/micro-ROS/ros_tracing/ros2_tracing-release.git
+      url: https://github.com/ros2-gbp-rpm/ros2_tracing-release.git
       version: 0.2.12-1
     source:
       test_commits: false
@@ -1875,7 +1880,7 @@ repositories:
       - ros2topic
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/ros2cli-release.git
+      url: https://github.com/ros2-gbp-rpm/ros2cli-release.git
       version: 0.8.7-1
     source:
       test_pull_requests: true
@@ -1889,7 +1894,7 @@ repositories:
       - can_msgs
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros-industrial-release/ros_canopen-release.git
+      url: https://github.com/ros2-gbp-rpm/ros_canopen-release.git
       version: 2.0.0-1
     source:
       type: git
@@ -1904,7 +1909,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/ros_environment-release.git
+      url: https://github.com/ros2-gbp-rpm/ros_environment-release.git
       version: 2.4.1-1
     source:
       test_pull_requests: true
@@ -1923,7 +1928,7 @@ repositories:
       - ros_testing
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/ros_testing-release.git
+      url: https://github.com/ros2-gbp-rpm/ros_testing-release.git
       version: 0.2.0-1
     source:
       test_pull_requests: true
@@ -1939,7 +1944,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/ros_workspace-release.git
+      url: https://github.com/ros2-gbp-rpm/ros_workspace-release.git
       version: 0.8.0-1
     source:
       type: git
@@ -1965,7 +1970,7 @@ repositories:
       - sqlite3_vendor
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rosbag2-release.git
+      url: https://github.com/ros2-gbp-rpm/rosbag2-release.git
       version: 0.2.4-1
     source:
       test_pull_requests: true
@@ -1984,7 +1989,7 @@ repositories:
       - rosbag2_bag_v2_plugins
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rosbag2_bag_v2-release.git
+      url: https://github.com/ros2-gbp-rpm/rosbag2_bag_v2-release.git
       version: 0.0.7-4
     source:
       test_pull_requests: true
@@ -2009,7 +2014,7 @@ repositories:
       - rosidl_typesupport_introspection_cpp
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rosidl-release.git
+      url: https://github.com/ros2-gbp-rpm/rosidl-release.git
       version: 0.8.2-1
     source:
       test_pull_requests: true
@@ -2027,7 +2032,7 @@ repositories:
       - rosidl_generator_dds_idl
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rosidl_dds-release.git
+      url: https://github.com/ros2-gbp-rpm/rosidl_dds-release.git
       version: 0.7.1-1
     source:
       test_pull_requests: true
@@ -2046,7 +2051,7 @@ repositories:
       - rosidl_default_runtime
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rosidl_defaults-release.git
+      url: https://github.com/ros2-gbp-rpm/rosidl_defaults-release.git
       version: 0.8.0-1
     source:
       test_pull_requests: true
@@ -2064,7 +2069,7 @@ repositories:
       - rosidl_generator_py
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rosidl_python-release.git
+      url: https://github.com/ros2-gbp-rpm/rosidl_python-release.git
       version: 0.8.1-1
     source:
       test_pull_requests: true
@@ -2080,7 +2085,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rosidl_runtime_py-release.git
+      url: https://github.com/ros2-gbp-rpm/rosidl_runtime_py-release.git
       version: 0.8.2-1
     source:
       test_pull_requests: true
@@ -2099,7 +2104,7 @@ repositories:
       - rosidl_typesupport_cpp
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rosidl_typesupport-release.git
+      url: https://github.com/ros2-gbp-rpm/rosidl_typesupport-release.git
       version: 0.8.0-2
     source:
       test_pull_requests: true
@@ -2119,7 +2124,7 @@ repositories:
       - rosidl_typesupport_connext_cpp
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rosidl_typesupport_connext-release.git
+      url: https://github.com/ros2-gbp-rpm/rosidl_typesupport_connext-release.git
       version: 0.8.4-1
     source:
       test_pull_requests: true
@@ -2139,7 +2144,7 @@ repositories:
       - rosidl_typesupport_fastrtps_cpp
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rosidl_typesupport_fastrtps-release.git
+      url: https://github.com/ros2-gbp-rpm/rosidl_typesupport_fastrtps-release.git
       version: 0.8.0-1
     source:
       test_pull_requests: true
@@ -2159,7 +2164,7 @@ repositories:
       - rosidl_typesupport_opensplice_cpp
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rosidl_typesupport_opensplice-release.git
+      url: https://github.com/ros2-gbp-rpm/rosidl_typesupport_opensplice-release.git
       version: 0.8.1-1
     source:
       test_pull_requests: true
@@ -2181,7 +2186,7 @@ repositories:
       - rqt_py_common
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rqt-release.git
+      url: https://github.com/ros2-gbp-rpm/rqt-release.git
       version: 1.0.5-1
     source:
       test_pull_requests: true
@@ -2197,7 +2202,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rqt_action-release.git
+      url: https://github.com/ros2-gbp-rpm/rqt_action-release.git
       version: 1.0.1-1
     source:
       type: git
@@ -2212,7 +2217,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rqt_common_plugins-release.git
+      url: https://github.com/ros2-gbp-rpm/rqt_common_plugins-release.git
       version: 1.0.0-1
     source:
       type: git
@@ -2227,7 +2232,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rqt_console-release.git
+      url: https://github.com/ros2-gbp-rpm/rqt_console-release.git
       version: 1.1.1-1
     source:
       type: git
@@ -2242,7 +2247,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rqt_graph-release.git
+      url: https://github.com/ros2-gbp-rpm/rqt_graph-release.git
       version: 1.0.4-1
     source:
       test_pull_requests: true
@@ -2258,7 +2263,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rqt_image_view-release.git
+      url: https://github.com/ros2-gbp-rpm/rqt_image_view-release.git
       version: 1.0.4-1
     source:
       test_pull_requests: true
@@ -2274,7 +2279,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rqt_msg-release.git
+      url: https://github.com/ros2-gbp-rpm/rqt_msg-release.git
       version: 1.0.2-1
     source:
       type: git
@@ -2289,7 +2294,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rqt_plot-release.git
+      url: https://github.com/ros2-gbp-rpm/rqt_plot-release.git
       version: 1.0.7-1
     source:
       type: git
@@ -2304,7 +2309,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rqt_publisher-release.git
+      url: https://github.com/ros2-gbp-rpm/rqt_publisher-release.git
       version: 1.1.0-1
     source:
       type: git
@@ -2319,7 +2324,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rqt_py_console-release.git
+      url: https://github.com/ros2-gbp-rpm/rqt_py_console-release.git
       version: 1.0.0-1
     source:
       type: git
@@ -2334,7 +2339,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rqt_reconfigure-release.git
+      url: https://github.com/ros2-gbp-rpm/rqt_reconfigure-release.git
       version: 1.0.4-1
     source:
       test_pull_requests: true
@@ -2350,7 +2355,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rqt_robot_steering-release.git
+      url: https://github.com/ros2-gbp-rpm/rqt_robot_steering-release.git
       version: 1.0.0-1
     source:
       type: git
@@ -2365,7 +2370,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rqt_service_caller-release.git
+      url: https://github.com/ros2-gbp-rpm/rqt_service_caller-release.git
       version: 1.0.3-1
     source:
       type: git
@@ -2380,7 +2385,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rqt_shell-release.git
+      url: https://github.com/ros2-gbp-rpm/rqt_shell-release.git
       version: 1.0.0-1
     source:
       type: git
@@ -2395,7 +2400,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rqt_srv-release.git
+      url: https://github.com/ros2-gbp-rpm/rqt_srv-release.git
       version: 1.0.1-1
     source:
       type: git
@@ -2410,7 +2415,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rqt_tf_tree-release.git
+      url: https://github.com/ros2-gbp-rpm/rqt_tf_tree-release.git
       version: 1.0.1-1
     source:
       test_pull_requests: true
@@ -2426,7 +2431,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rqt_top-release.git
+      url: https://github.com/ros2-gbp-rpm/rqt_top-release.git
       version: 1.0.0-1
     source:
       type: git
@@ -2441,7 +2446,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rqt_topic-release.git
+      url: https://github.com/ros2-gbp-rpm/rqt_topic-release.git
       version: 1.1.0-1
     source:
       type: git
@@ -2465,7 +2470,7 @@ repositories:
       - rviz_visual_testing_framework
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/rviz-release.git
+      url: https://github.com/ros2-gbp-rpm/rviz-release.git
       version: 7.0.4-1
     source:
       test_pull_requests: true
@@ -2492,7 +2497,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/yujinrobot-release/sophus-release.git
+      url: https://github.com/ros2-gbp-rpm/sophus-release.git
       version: 1.1.0-1
     source:
       type: git
@@ -2507,7 +2512,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/SteveMacenski/spatio_temporal_voxel_layer-release.git
+      url: https://github.com/ros2-gbp-rpm/spatio_temporal_voxel_layer-release.git
       version: 2.1.2-2
     source:
       test_pull_requests: true
@@ -2519,7 +2524,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/spdlog_vendor-release.git
+      url: https://github.com/ros2-gbp-rpm/spdlog_vendor-release.git
       version: 1.0.1-1
     source:
       test_pull_requests: true
@@ -2538,7 +2543,7 @@ repositories:
       - sros2_cmake
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/sros2-release.git
+      url: https://github.com/ros2-gbp-rpm/sros2-release.git
       version: 0.8.1-1
     source:
       test_pull_requests: true
@@ -2553,7 +2558,7 @@ repositories:
       - system_modes_examples
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/microROS/system_modes-release.git
+      url: https://github.com/ros2-gbp-rpm/system_modes-release.git
       version: 0.1.5-1
     status: developed
   teleop_tools:
@@ -2570,7 +2575,7 @@ repositories:
       - teleop_tools_msgs
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros-gbp/teleop_tools-release.git
+      url: https://github.com/ros2-gbp-rpm/teleop_tools-release.git
       version: 1.0.1-1
     source:
       type: git
@@ -2585,7 +2590,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/teleop_twist_joy-release.git
+      url: https://github.com/ros2-gbp-rpm/teleop_twist_joy-release.git
       version: 2.2.2-1
     source:
       test_pull_requests: true
@@ -2601,7 +2606,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/teleop_twist_keyboard-release.git
+      url: https://github.com/ros2-gbp-rpm/teleop_twist_keyboard-release.git
       version: 2.3.1-1
     source:
       test_pull_requests: true
@@ -2617,7 +2622,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/test_interface_files-release.git
+      url: https://github.com/ros2-gbp-rpm/test_interface_files-release.git
       version: 0.8.0-1
     source:
       test_pull_requests: true
@@ -2629,7 +2634,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/tinydir_vendor-release.git
+      url: https://github.com/ros2-gbp-rpm/tinydir_vendor-release.git
       version: 1.1.1-1
     source:
       test_pull_requests: true
@@ -2641,7 +2646,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/tinyxml2_vendor-release.git
+      url: https://github.com/ros2-gbp-rpm/tinyxml2_vendor-release.git
       version: 0.6.1-1
     source:
       test_pull_requests: true
@@ -2653,7 +2658,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/tinyxml_vendor-release.git
+      url: https://github.com/ros2-gbp-rpm/tinyxml_vendor-release.git
       version: 0.7.0-1
     source:
       test_pull_requests: true
@@ -2669,7 +2674,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/tlsf-release.git
+      url: https://github.com/ros2-gbp-rpm/tlsf-release.git
       version: 0.5.0-1
     source:
       test_pull_requests: true
@@ -2688,7 +2693,7 @@ repositories:
       - tracetools_analysis
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://gitlab.com/micro-ROS/ros_tracing/tracetools_analysis-release.git
+      url: https://github.com/ros2-gbp-rpm/tracetools_analysis-release.git
       version: 0.2.2-1
     source:
       type: git
@@ -2703,7 +2708,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/ros_tutorials-release.git
+      url: https://github.com/ros2-gbp-rpm/ros_tutorials-release.git
       version: 1.1.0-1
     source:
       test_abi: true
@@ -2716,7 +2721,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/uncrustify_vendor-release.git
+      url: https://github.com/ros2-gbp-rpm/uncrustify_vendor-release.git
       version: 1.3.0-1
     source:
       test_pull_requests: true
@@ -2732,7 +2737,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/unique_identifier_msgs-release.git
+      url: https://github.com/ros2-gbp-rpm/unique_identifier_msgs-release.git
       version: 2.1.0-1
     source:
       test_pull_requests: true
@@ -2748,7 +2753,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/urdf-release.git
+      url: https://github.com/ros2-gbp-rpm/urdf-release.git
       version: 2.2.0-1
     source:
       test_pull_requests: true
@@ -2764,7 +2769,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/urdfdom-release.git
+      url: https://github.com/ros2-gbp-rpm/urdfdom-release.git
       version: 2.2.0-1
     source:
       test_pull_requests: true
@@ -2780,7 +2785,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/urdfdom_headers-release.git
+      url: https://github.com/ros2-gbp-rpm/urdfdom_headers-release.git
       version: 1.0.4-1
     source:
       test_pull_requests: true
@@ -2796,7 +2801,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://gitlab.com/boldhearts/releases/ros2_v4l2_camera-release.git
+      url: https://github.com/ros2-gbp-rpm/ros2_v4l2_camera-release.git
       version: 0.1.1-1
     source:
       type: git
@@ -2815,7 +2820,7 @@ repositories:
       - ros_core
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/variants-release.git
+      url: https://github.com/ros2-gbp-rpm/variants-release.git
       version: 0.8.4-1
     source:
       test_pull_requests: true
@@ -2831,7 +2836,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/stonier/velocity_smoother-release.git
+      url: https://github.com/ros2-gbp-rpm/velocity_smoother-release.git
       version: 0.14.0-1
     source:
       test_pull_requests: true
@@ -2851,7 +2856,7 @@ repositories:
       - vision_opencv
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/vision_opencv-release.git
+      url: https://github.com/ros2-gbp-rpm/vision_opencv-release.git
       version: 2.1.4-1
     source:
       test_pull_requests: true
@@ -2867,7 +2872,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros-gbp/xacro-release.git
+      url: https://github.com/ros2-gbp-rpm/xacro-release.git
       version: 2.0.1-1
     source:
       test_pull_requests: true
@@ -2879,7 +2884,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp/yaml_cpp_vendor-release.git
+      url: https://github.com/ros2-gbp-rpm/yaml_cpp_vendor-release.git
       version: 7.0.0-1
     source:
       type: git
