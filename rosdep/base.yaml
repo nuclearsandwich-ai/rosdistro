@@ -440,6 +440,7 @@ coinor-libipopt-dev:
   fedora: [coin-or-CoinUtils-devel]
   gentoo: [sci-libs/ipopt]
   rhel:
+    '*': []
     '7': [coin-or-CoinUtils-devel]
   ubuntu: [coinor-libipopt-dev]
 coinor-libosi-dev:
