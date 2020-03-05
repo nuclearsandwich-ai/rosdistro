@@ -182,6 +182,21 @@ repositories:
       url: https://github.com/ros/angles.git
       version: ros2
     status: maintained
+  apex_containers:
+    doc:
+      type: git
+      url: https://gitlab.com/ApexAI/apex_containers.git
+      version: master
+    release:
+      tags:
+        release: release/eloquent/{package}/{version}
+      url: https://github.com/ros2-gbp-rpm/apex_containers-release.git
+      version: 0.0.2-1
+    source:
+      type: git
+      url: https://gitlab.com/ApexAI/apex_containers.git
+      version: master
+    status: developed
   apex_test_tools:
     doc:
       type: git
@@ -217,6 +232,21 @@ repositories:
     source:
       type: git
       url: https://github.com/astuff/automotive_autonomy_msgs.git
+      version: master
+    status: developed
+  autoware_auto_msgs:
+    doc:
+      type: git
+      url: https://gitlab.com/autowarefoundation/autoware.auto/autoware_auto_msgs.git
+      version: master
+    release:
+      tags:
+        release: release/eloquent/{package}/{version}
+      url: https://github.com/ros2-gbp-rpm/autoware_auto_msgs-release.git
+      version: 0.0.2-1
+    source:
+      type: git
+      url: https://gitlab.com/autowarefoundation/autoware.auto/autoware_auto_msgs.git
       version: master
     status: developed
   behaviortree_cpp_v3:
@@ -2555,6 +2585,22 @@ repositories:
       version: master
     status: developed
     status_description: developed
+  slam_toolbox:
+    doc:
+      type: git
+      url: https://github.com/SteveMacenski/slam_toolbox.git
+      version: eloquent-devel
+    release:
+      tags:
+        release: release/eloquent/{package}/{version}
+      url: https://github.com/ros2-gbp-rpm/slam_toolbox-release.git
+      version: 2.1.1-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/SteveMacenski/slam_toolbox.git
+      version: eloquent-devel
+    status: developed
   slide_show:
     release:
       tags:
