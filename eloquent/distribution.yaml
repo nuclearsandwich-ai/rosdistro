@@ -820,6 +820,27 @@ repositories:
       url: https://github.com/ament/googletest.git
       version: ros2
     status: maintained
+  gps_umd:
+    doc:
+      type: git
+      url: https://github.com/swri-robotics/gps_umd.git
+      version: dashing-devel
+    release:
+      packages:
+      - gps_msgs
+      - gps_tools
+      - gps_umd
+      - gpsd_client
+      tags:
+        release: release/eloquent/{package}/{version}
+      url: https://github.com/ros2-gbp-rpm/gps_umd-release.git
+      version: 1.0.2-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/swri-robotics/gps_umd.git
+      version: dashing-devel
+    status: developed
   image_common:
     doc:
       type: git
@@ -1056,6 +1077,29 @@ repositories:
       url: https://github.com/ros2/libyaml_vendor.git
       version: eloquent
     status: maintained
+  marti_messages:
+    doc:
+      type: git
+      url: https://github.com/swri-robotics/marti_messages.git
+      version: dashing-devel
+    release:
+      packages:
+      - marti_can_msgs
+      - marti_common_msgs
+      - marti_nav_msgs
+      - marti_perception_msgs
+      - marti_sensor_msgs
+      - marti_status_msgs
+      - marti_visualization_msgs
+      tags:
+        release: release/eloquent/{package}/{version}
+      url: https://github.com/ros2-gbp-rpm/marti_messages-release.git
+      version: 1.0.0-1
+    source:
+      type: git
+      url: https://github.com/swri-robotics/marti_messages.git
+      version: dashing-devel
+    status: developed
   mavlink:
     doc:
       type: git
@@ -1440,7 +1484,7 @@ repositories:
       tags:
         release: release/eloquent/{package}/{version}
       url: https://github.com/ros2-gbp-rpm/py_trees_ros-release.git
-      version: 2.0.8-1
+      version: 2.0.9-1
     source:
       test_pull_requests: true
       type: git
