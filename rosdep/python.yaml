@@ -4481,6 +4481,19 @@ python-telegram-bot:
   ubuntu:
     pip:
       packages: [python-telegram-bot]
+python-tensorboardX-pip:
+  debian:
+    pip:
+      packages: [tensorboardX]
+  fedora:
+    pip:
+      packages: [tensorboardX]
+  osx:
+    pip:
+      packages: [tensorboardX]
+  ubuntu:
+    pip:
+      packages: [tensorboardX]
 python-tensorflow-gpu-pip:
   debian:
     pip:
@@ -5759,6 +5772,19 @@ python3-sphinx-rtd-theme:
 python3-sqlalchemy:
   debian: [python3-sqlalchemy]
   ubuntu: [python3-sqlalchemy]
+python3-tensorboardX-pip:
+  debian:
+    pip:
+      packages: [tensorboardX]
+  fedora:
+    pip:
+      packages: [tensorboardX]
+  osx:
+    pip:
+      packages: [tensorboardX]
+  ubuntu:
+    pip:
+      packages: [tensorboardX]
 python3-termcolor:
   debian: [python3-termcolor]
   fedora: [python3-termcolor]
