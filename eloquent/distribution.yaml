@@ -11,6 +11,17 @@ release_platforms:
   ubuntu:
   - bionic
 repositories:
+  aaaa:
+    release:
+      tags:
+        release: release/eloquent/{package}/{version}
+      url: https://github.com/cottsay/aaaa-release.git
+      version: 0.0.2-1
+    source:
+      type: git
+      url: https://github.com/cottsay/aaaa.git
+      version: master
+    status: developed
   ament_cmake:
     doc:
       type: git
