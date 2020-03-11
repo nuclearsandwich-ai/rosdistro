@@ -846,7 +846,7 @@ python-catkin-pkg:
       packages: [catkin-pkg]
   rhel:
     '*': []
-    '7': [python-catkin_pkg]
+    '7': [python2-catkin_pkg]
   slackware:
     pip:
       packages: [catkin-pkg]
@@ -5670,6 +5670,16 @@ python3-qt5-bindings-webkit:
   fedora: [python3-qt5-webkit]
   gentoo: ['dev-python/PyQt5[webkit]']
   ubuntu: [python3-pyqt5.qtwebkit]
+python3-rafcon-pip:
+  debian:
+    pip:
+      packages: [rafcon]
+  fedora:
+    pip:
+      packages: [rafcon]
+  ubuntu:
+    pip:
+      packages: [rafcon]
 python3-retrying:
   arch: [python-retrying]
   debian: [python3-retrying]

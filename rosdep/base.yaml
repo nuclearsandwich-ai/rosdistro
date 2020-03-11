@@ -309,6 +309,8 @@ bullet:
   macports: [bullet]
   openembedded: [bullet@meta-ros]
   opensuse: [libbullet]
+  rhel:
+    '7': [bullet-devel]
   ubuntu:
     '*': [libbullet-dev]
     trusty_python3: [libbullet-dev]
@@ -1424,15 +1426,7 @@ java:
     '*': [default-jdk]
     jessie: [openjdk-7-jdk]
     wheezy: [openjdk-7-jdk]
-  fedora:
-    '21': [java-1.8.0-openjdk]
-    '22': [java-1.8.0-openjdk]
-    '23': [java-1.8.0-openjdk]
-    '24': [java-1.8.0-openjdk]
-    beefy: [java-1.7.0-openjdk]
-    heisenbug: [java-1.8.0-openjdk, java-1.7.0-openjdk]
-    schrödinger’s: [java-1.8.0-openjdk, java-1.7.0-openjdk]
-    spherical: [java-1.7.0-openjdk]
+  fedora: [java]
   freebsd: [openjdk6]
   gentoo: [virtual/jdk]
   ubuntu: [default-jdk]
@@ -1749,6 +1743,7 @@ libboost-system:
     buster: [libboost-system1.67.0]
     stretch: [libboost-system1.62.0]
   fedora: [boost-system]
+  rhel: [boost-system]
   ubuntu:
     bionic: [libboost-system1.65.1]
     disco: [libboost-system1.67.0]
@@ -5075,6 +5070,7 @@ qtmultimedia5-dev:
 qttools5-dev:
   debian: [qttools5-dev]
   fedora: [qt5-qttools-devel]
+  rhel: [qt5-qttools-devel]
   ubuntu: [qttools5-dev]
 qttools5-dev-tools:
   debian: [qttools5-dev-tools]
