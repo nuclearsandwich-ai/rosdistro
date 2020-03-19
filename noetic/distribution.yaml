@@ -135,7 +135,7 @@ repositories:
     doc:
       type: git
       url: https://github.com/ros/common_msgs.git
-      version: jade-devel
+      version: noetic-devel
     release:
       packages:
       - actionlib_msgs
@@ -156,7 +156,7 @@ repositories:
       test_pull_requests: true
       type: git
       url: https://github.com/ros/common_msgs.git
-      version: jade-devel
+      version: noetic-devel
     status: maintained
   control_msgs:
     doc:
@@ -316,6 +316,17 @@ repositories:
       url: https://github.com/ros/genpy.git
       version: kinetic-devel
     status: maintained
+  geographic_info:
+    release:
+      packages:
+      - geodesy
+      - geographic_info
+      - geographic_msgs
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-geographic-info/geographic_info-release.git
+      version: 0.5.5-1
+    status: maintained
   geometry:
     doc:
       type: git
@@ -388,10 +399,23 @@ repositories:
       version: hydro-devel
     status: maintained
   joint_state_publisher:
-    source:
+    doc:
       type: git
       url: https://github.com/ros/joint_state_publisher.git
-      version: kinetic-devel
+      version: noetic-devel
+    release:
+      packages:
+      - joint_state_publisher
+      - joint_state_publisher_gui
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/joint_state_publisher-release.git
+      version: 1.15.0-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/ros/joint_state_publisher.git
+      version: noetic-devel
     status: maintained
   kdl_parser:
     source:
@@ -400,6 +424,15 @@ repositories:
       version: melodic-devel
     status: maintained
   laser_geometry:
+    doc:
+      type: git
+      url: https://github.com/ros-perception/laser_geometry.git
+      version: kinetic-devel
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/laser_geometry-release.git
+      version: 1.6.5-1
     source:
       type: git
       url: https://github.com/ros-perception/laser_geometry.git
@@ -505,11 +538,16 @@ repositories:
       version: melodic-devel
     status: maintained
   pcl_msgs:
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/pcl_msgs-release.git
+      version: 0.3.0-1
     source:
       test_pull_requests: true
       type: git
       url: https://github.com/ros-perception/pcl_msgs.git
-      version: indigo-devel
+      version: noetic-devel
     status: maintained
   pluginlib:
     doc:
@@ -526,6 +564,21 @@ repositories:
       type: git
       url: https://github.com/ros/pluginlib.git
       version: melodic-devel
+    status: maintained
+  pyquaternion:
+    doc:
+      type: git
+      url: https://github.com/Achllle/pyquaternion.git
+      version: noetic-devel
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/Achllle/pyquaternion-release.git
+      version: 0.9.6-1
+    source:
+      type: git
+      url: https://github.com/Achllle/pyquaternion.git
+      version: noetic-devel
     status: maintained
   python_qt_binding:
     doc:
@@ -655,7 +708,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ros-gbp/ros-release.git
-      version: 1.15.0-1
+      version: 1.15.1-1
     source:
       test_pull_requests: true
       type: git
@@ -834,6 +887,15 @@ repositories:
       version: master
     status: maintained
   roslint:
+    doc:
+      type: git
+      url: https://github.com/ros/roslint.git
+      version: master
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/roslint-release.git
+      version: 0.12.0-1
     source:
       type: git
       url: https://github.com/ros/roslint.git
@@ -891,19 +953,64 @@ repositories:
       url: https://github.com/ros-visualization/rqt.git
       version: kinetic-devel
     status: maintained
+  rqt_action:
+    doc:
+      type: git
+      url: https://github.com/ros-visualization/rqt_action.git
+      version: master
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/rqt_action-release.git
+      version: 0.4.9-1
+    source:
+      type: git
+      url: https://github.com/ros-visualization/rqt_action.git
+      version: master
+    status: maintained
   rqt_bag:
+    doc:
+      type: git
+      url: https://github.com/ros-visualization/rqt_bag.git
+      version: master
+    release:
+      packages:
+      - rqt_bag
+      - rqt_bag_plugins
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/rqt_bag-release.git
+      version: 0.4.13-1
     source:
       type: git
       url: https://github.com/ros-visualization/rqt_bag.git
       version: master
     status: maintained
   rqt_console:
+    doc:
+      type: git
+      url: https://github.com/ros-visualization/rqt_console.git
+      version: master
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/rqt_console-release.git
+      version: 0.4.9-1
     source:
       type: git
       url: https://github.com/ros-visualization/rqt_console.git
       version: master
     status: maintained
   rqt_dep:
+    doc:
+      type: git
+      url: https://github.com/ros-visualization/rqt_dep.git
+      version: master
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/rqt_dep-release.git
+      version: 0.4.10-1
     source:
       type: git
       url: https://github.com/ros-visualization/rqt_dep.git
@@ -925,6 +1032,22 @@ repositories:
       url: https://github.com/ros-visualization/rqt_graph.git
       version: master
     status: maintained
+  rqt_launch:
+    doc:
+      type: git
+      url: https://github.com/ros-visualization/rqt_launch.git
+      version: master
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/rqt_launch-release.git
+      version: 0.4.8-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/ros-visualization/rqt_launch.git
+      version: master
+    status: maintained
   rqt_logger_level:
     doc:
       type: git
@@ -941,9 +1064,33 @@ repositories:
       version: master
     status: maintained
   rqt_msg:
+    doc:
+      type: git
+      url: https://github.com/ros-visualization/rqt_msg.git
+      version: master
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/rqt_msg-release.git
+      version: 0.4.9-1
     source:
       type: git
       url: https://github.com/ros-visualization/rqt_msg.git
+      version: master
+    status: maintained
+  rqt_nav_view:
+    doc:
+      type: git
+      url: https://github.com/ros-visualization/rqt_nav_view.git
+      version: master
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/rqt_nav_view-release.git
+      version: 0.5.7-1
+    source:
+      type: git
+      url: https://github.com/ros-visualization/rqt_nav_view.git
       version: master
     status: maintained
   rqt_plot:
@@ -991,6 +1138,21 @@ repositories:
       url: https://github.com/ros-visualization/rqt_publisher.git
       version: master
     status: maintained
+  rqt_py_console:
+    doc:
+      type: git
+      url: https://github.com/ros-visualization/rqt_py_console.git
+      version: master
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/rqt_py_console-release.git
+      version: 0.4.9-1
+    source:
+      type: git
+      url: https://github.com/ros-visualization/rqt_py_console.git
+      version: master
+    status: maintained
   rqt_robot_steering:
     doc:
       type: git
@@ -1004,6 +1166,21 @@ repositories:
     source:
       type: git
       url: https://github.com/ros-visualization/rqt_robot_steering.git
+      version: master
+    status: maintained
+  rqt_runtime_monitor:
+    doc:
+      type: git
+      url: https://github.com/ros-visualization/rqt_runtime_monitor.git
+      version: master
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/rqt_runtime_monitor-release.git
+      version: 0.5.8-1
+    source:
+      type: git
+      url: https://github.com/ros-visualization/rqt_runtime_monitor.git
       version: master
     status: maintained
   rqt_service_caller:
@@ -1021,10 +1198,65 @@ repositories:
       url: https://github.com/ros-visualization/rqt_service_caller.git
       version: master
     status: maintained
+  rqt_shell:
+    doc:
+      type: git
+      url: https://github.com/ros-visualization/rqt_shell.git
+      version: master
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/rqt_shell-release.git
+      version: 0.4.10-1
+    source:
+      type: git
+      url: https://github.com/ros-visualization/rqt_shell.git
+      version: master
+    status: maintained
   rqt_srv:
+    doc:
+      type: git
+      url: https://github.com/ros-visualization/rqt_srv.git
+      version: master
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/rqt_srv-release.git
+      version: 0.4.8-1
     source:
       type: git
       url: https://github.com/ros-visualization/rqt_srv.git
+      version: master
+    status: maintained
+  rqt_tf_tree:
+    doc:
+      type: git
+      url: https://github.com/ros-visualization/rqt_tf_tree.git
+      version: master
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/rqt_tf_tree-release.git
+      version: 0.6.1-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/ros-visualization/rqt_tf_tree.git
+      version: master
+    status: maintained
+  rqt_top:
+    doc:
+      type: git
+      url: https://github.com/ros-visualization/rqt_top.git
+      version: master
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/rqt_top-release.git
+      version: 0.4.9-1
+    source:
+      type: git
+      url: https://github.com/ros-visualization/rqt_top.git
       version: master
     status: maintained
   rqt_topic:
@@ -1071,6 +1303,17 @@ repositories:
       type: git
       url: https://github.com/ros/std_msgs.git
       version: kinetic-devel
+    status: maintained
+  unique_identifier:
+    release:
+      packages:
+      - unique_id
+      - unique_identifier
+      - uuid_msgs
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-geographic-info/unique_identifier-release.git
+      version: 1.0.6-1
     status: maintained
   urdf:
     doc:

@@ -2905,7 +2905,7 @@ repositories:
     doc:
       type: git
       url: https://gitlab.com/micro-ROS/ros_tracing/tracetools_analysis.git
-      version: master
+      version: eloquent
     release:
       packages:
       - ros2trace_analysis
@@ -2917,7 +2917,7 @@ repositories:
     source:
       type: git
       url: https://gitlab.com/micro-ROS/ros_tracing/tracetools_analysis.git
-      version: master
+      version: eloquent
     status: developed
   turtlesim:
     doc:
@@ -3029,6 +3029,22 @@ repositories:
       type: git
       url: https://github.com/ros/urdfdom_headers.git
       version: eloquent
+    status: maintained
+  urg_node_msgs:
+    doc:
+      type: git
+      url: https://github.com/ros-drivers/urg_node_msgs.git
+      version: master
+    release:
+      tags:
+        release: release/eloquent/{package}/{version}
+      url: https://github.com/ros2-gbp-rpm/urg_node_msgs-release.git
+      version: 1.0.0-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/ros-drivers/urg_node_msgs.git
+      version: master
     status: maintained
   v4l2_camera:
     doc:
