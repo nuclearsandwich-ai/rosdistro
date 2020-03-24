@@ -1711,8 +1711,8 @@ libboost-python:
     disco: [libboost-python1.67.0]
     eoan: [libboost-python1.67.0]
     focal: [libboost-python1.71.0]
-    trusty: [libboost-python-1.54.0]
-    xenial: [libboost-python-1.58.0]
+    trusty: [libboost-python1.54.0]
+    xenial: [libboost-python1.58.0]
 libboost-python-dev:
   alpine: [boost-python2]
   debian: [libboost-python-dev]
@@ -3207,6 +3207,9 @@ libqd-dev:
   gentoo: [sci-libs/qd]
   macports: [qd]
   ubuntu: [libqd-dev]
+libqglviewer-dev-qt5:
+  debian: [libqglviewer-dev-qt5]
+  ubuntu: [libqglviewer-dev-qt5]
 libqglviewer-qt4:
   arch: [libqglviewer-qt4]
   debian:
@@ -3264,6 +3267,9 @@ libqglviewer-qt4-dev:
     xenial: [libqglviewer-dev-qt4]
     yakkety: [libqglviewer-dev-qt4]
     zesty: [libqglviewer-dev-qt4]
+libqglviewer2-qt5:
+  debian: [libqglviewer2-qt5]
+  ubuntu: [libqglviewer2-qt5]
 libqhull:
   arch: [qhull]
   debian: [libqhull-dev]

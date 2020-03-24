@@ -299,6 +299,24 @@ repositories:
       url: https://github.com/ros2/cartographer_ros.git
       version: dashing
     status: maintained
+  cascade_lifecycle:
+    doc:
+      type: git
+      url: https://github.com/fmrico/cascade_lifecycle.git
+      version: master
+    release:
+      packages:
+      - cascade_lifecycle_msgs
+      - rclcpp_cascade_lifecycle
+      tags:
+        release: release/eloquent/{package}/{version}
+      url: https://github.com/ros2-gbp-rpm/cascade_lifecycle-release.git
+      version: 0.0.3-2
+    source:
+      type: git
+      url: https://github.com/fmrico/cascade_lifecycle.git
+      version: master
+    status: developed
   class_loader:
     doc:
       type: git
@@ -1371,7 +1389,7 @@ repositories:
       tags:
         release: release/eloquent/{package}/{version}
       url: https://github.com/ros2-gbp-rpm/osrf_testing_tools_cpp-release.git
-      version: 1.2.1-1
+      version: 1.2.2-1
     source:
       test_pull_requests: true
       type: git
@@ -1548,7 +1566,7 @@ repositories:
       tags:
         release: release/eloquent/{package}/{version}
       url: https://github.com/ros2-gbp-rpm/py_trees_ros-release.git
-      version: 2.0.10-1
+      version: 2.0.11-1
     source:
       test_pull_requests: true
       type: git
