@@ -5483,8 +5483,8 @@ python3-lttng:
   debian: [python3-lttng]
   fedora:
     '*': [python3-lttng]
-    '30': null
-    '31': null
+    '30': []
+    '31': []
   rhel: []
   ubuntu: [python3-lttng]
 python3-lxml:
