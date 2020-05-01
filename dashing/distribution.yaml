@@ -1087,6 +1087,13 @@ repositories:
       url: https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
       version: dashing-devel
     status: developed
+  ifm3d_core:
+    release:
+      tags:
+        release: release/dashing/{package}/{version}
+      url: https://github.com/ifm/ifm3d-release.git
+      version: 0.17.0-12
+    status: developed
   image_common:
     doc:
       type: git
@@ -3176,7 +3183,7 @@ repositories:
       tags:
         release: release/dashing/{package}/{version}
       url: https://github.com/ros-gbp/teleop_tools-release.git
-      version: 1.0.2-1
+      version: 1.1.0-1
     source:
       type: git
       url: https://github.com/ros-teleop/teleop_tools.git
@@ -3434,7 +3441,7 @@ repositories:
       tags:
         release: release/dashing/{package}/{version}
       url: https://github.com/ros2-gbp/unique_identifier_msgs-release.git
-      version: 2.1.0-1
+      version: 2.1.1-1
     source:
       test_pull_requests: true
       type: git
