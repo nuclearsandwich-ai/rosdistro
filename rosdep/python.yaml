@@ -231,7 +231,8 @@ paramiko:
   osx:
     pip:
       packages: [paramiko]
-  rhel: [python-paramiko]
+  rhel:
+    '7': [python-paramiko]
   ubuntu: [python-paramiko]
 pi-ina219-pip:
   debian:
@@ -372,7 +373,9 @@ python:
   macports: [python26, python_select]
   openembedded: [python@openembedded-core]
   opensuse: [python-devel]
-  rhel: [python-devel]
+  rhel:
+    '*': [python2-devel]
+    '7': [python-devel]
   slackware:
     slackpkg:
       packages: [python]
@@ -484,6 +487,9 @@ python-argparse:
   osx:
     pip:
       packages: [argparse]
+  rhel:
+    '*': [python2]
+    '7': [python]
   slackware:
     pip:
       packages: [argparse]
@@ -743,6 +749,9 @@ python-cairo:
   freebsd: [py27-cairo]
   gentoo: [dev-python/pycairo]
   opensuse: [python-cairo]
+  rhel:
+    '*': [python2-cairo]
+    '7': [pycairo]
   slackware:
     slackpkg:
       packages: [pycairo]
@@ -891,6 +900,8 @@ python-catkin-pkg-modules:
   osx:
     pip:
       packages: [catkin-pkg]
+  rhel:
+    '7': [python-catkin_pkg]
   slackware:
     pip:
       packages: [catkin-pkg]
@@ -1102,6 +1113,9 @@ python-coverage:
   osx:
     pip:
       packages: [coverage]
+  rhel:
+    '*': [python2-coverage]
+    '7': [python-coverage]
   slackware: [coverage]
   ubuntu:
     artful: [python-coverage]
@@ -1279,6 +1293,8 @@ python-defusedxml:
   osx:
     pip:
       packages: [defusedxml]
+  rhel:
+    '7': [python-defusedxml]
   slackware:
     pip:
       packages: [defusedxml]
@@ -1381,6 +1397,8 @@ python-empy:
   osx:
     pip:
       packages: [empy]
+  rhel:
+    '7': [python-empy]
   slackware:
     pip:
       packages: [empy]
@@ -1766,6 +1784,8 @@ python-gnupg:
   freebsd: [py27-python-gnupg]
   gentoo: [dev-python/python-gnupg]
   openembedded: [python-gnupg@meta-ros]
+  rhel:
+    '7': [python-gnupg]
   ubuntu: [python-gnupg]
 python-google-cloud-bigquery-pip:
   debian:
@@ -2059,7 +2079,8 @@ python-imaging:
   osx:
     pip:
       packages: [Pillow]
-  rhel: [python-imaging]
+  rhel:
+    '7': [python-imaging]
   slackware:
     slackpkg:
       packages: [python-pillow]
@@ -2363,7 +2384,8 @@ python-matplotlib:
     pip:
       depends: [pkg-config, freetype, libpng12-dev]
       packages: [matplotlib]
-  rhel: [python-matplotlib]
+  rhel:
+    '7': [python-matplotlib]
   slackware: [matplotlib]
   ubuntu:
     artful: [python-matplotlib]
@@ -2551,6 +2573,8 @@ python-netifaces:
   osx:
     pip:
       packages: [netifaces]
+  rhel:
+    '7': [python-netifaces]
   slackware: [netifaces]
   ubuntu:
     artful: [python-netifaces]
@@ -2606,6 +2630,9 @@ python-nose:
   osx:
     pip:
       packages: [nose]
+  rhel:
+    '*': [python2-nose]
+    '7': [python-nose]
   slackware: [nose]
   ubuntu:
     artful: [python-nose]
@@ -2744,6 +2771,8 @@ python-opencv:
   gentoo: ['media-libs/opencv[python]']
   openembedded: [opencv@meta-oe]
   opensuse: [python-opencv]
+  rhel:
+    '7': [opencv-python]
   slackware: [opencv]
   ubuntu: [python-opencv]
 python-opengl:
@@ -2757,6 +2786,8 @@ python-opengl:
   osx:
     pip:
       packages: [PyOpenGL]
+  rhel:
+    '7': [PyOpenGL]
   slackware: [PyOpenGL]
   ubuntu:
     artful: [python-opengl]
@@ -2858,7 +2889,8 @@ python-paramiko:
   osx:
     pip:
       packages: [paramiko]
-  rhel: [python-paramiko]
+  rhel:
+    '7': [python-paramiko]
   slackware: [paramiko]
   ubuntu: [python-paramiko]
 python-parse:
@@ -3194,7 +3226,9 @@ python-pycryptodome:
   osx:
     pip:
       packages: [pycryptodome]
-  rhel: [python-pycryptodomex]
+  rhel:
+    '*': [python2-pycryptodomex]
+    '7': [python-pycryptodomex]
   ubuntu: [python-pycryptodome]
 python-pycurl:
   debian: [python-pycurl]
@@ -3223,6 +3257,8 @@ python-pydot:
   osx:
     pip:
       packages: [pydot]
+  rhel:
+    '7': [python-pydot]
   slackware: [pydot]
   ubuntu: [python-pydot]
 python-pyexiv2:
@@ -3275,6 +3311,8 @@ python-pygraphviz:
   osx:
     pip:
       packages: [pygraphviz]
+  rhel:
+    '7': [python-pygraphviz]
   slackware: [pygraphviz]
   ubuntu: [python-pygraphviz]
 python-pyinotify:
@@ -3777,6 +3815,8 @@ python-rosdep:
   osx:
     pip:
       packages: [rosdep]
+  rhel:
+    '7': [python-rosdep]
   slackware:
     pip:
       packages: [rosdep]
@@ -3819,7 +3859,8 @@ python-rosdep-modules:
   osx:
     pip:
       packages: [rosdep]
-  rhel: ['python-rosdep']
+  rhel:
+    '7': [python-rosdep]
   slackware:
     pip:
       packages: [rosdep]
@@ -3899,6 +3940,8 @@ python-rospkg:
   osx:
     pip:
       packages: [rospkg]
+  rhel:
+    '7': [python-rospkg]
   slackware:
     pip:
       packages: [rospkg]
@@ -3927,6 +3970,8 @@ python-rospkg-modules:
   osx:
     pip:
       packages: [rospkg]
+  rhel:
+    '7': [python-rospkg]
   slackware:
     pip:
       packages: [rospkg]
@@ -4142,6 +4187,9 @@ python-setuptools:
   osx:
     pip:
       packages: [setuptools]
+  rhel:
+    '*': [python2-setuptools]
+    '7': [python-setuptools]
   ubuntu:
     artful: [python-setuptools]
     bionic: [python-setuptools]
@@ -5116,6 +5164,8 @@ python-wxtools:
   freebsd: [py27-wxPython30]
   gentoo: [dev-python/wxpython]
   openembedded: [wxpython@meta-oe]
+  rhel:
+    '7': [wxPython]
   ubuntu: [python-wxtools]
 python-xdot:
   debian: [xdot]
@@ -5159,7 +5209,9 @@ python-yaml:
     pip:
       depends: [yaml]
       packages: [PyYAML]
-  rhel: [PyYAML]
+  rhel:
+    '*': [python2-pyyaml]
+    '7': [PyYAML]
   slackware: [PyYAML]
   ubuntu:
     artful: [python-yaml]
@@ -5201,6 +5253,7 @@ python3:
   debian: [python3-dev]
   fedora: [python3-devel]
   gentoo: [dev-lang/python]
+  rhel: ['python%{python3_pkgversion}-devel']
   ubuntu: [python3-dev]
 python3-asyncssh:
   debian: [python3-asyncssh]
@@ -5271,6 +5324,7 @@ python3-catkin-pkg:
   debian: [python3-catkin-pkg]
   fedora: [python3-catkin_pkg]
   gentoo: [dev-python/catkin_pkg]
+  rhel: ['python%{python3_pkgversion}-catkin_pkg']
   ubuntu: [python3-catkin-pkg]
 python3-catkin-pkg-modules:
   debian: [python3-catkin-pkg-modules]
@@ -5296,6 +5350,7 @@ python3-coverage:
   debian: [python3-coverage]
   fedora: [python3-coverage]
   gentoo: [dev-python/coverage]
+  rhel: ['python%{python3_pkgversion}-coverage']
   ubuntu: [python3-coverage]
 python3-cryptography:
   debian: [python3-cryptography]
@@ -5306,6 +5361,7 @@ python3-defusedxml:
   debian: [python3-defusedxml]
   fedora: [python3-defusedxml]
   gentoo: [dev-python/defusedxml]
+  rhel: ['python%{python3_pkgversion}-defusedxml']
   ubuntu: [python3-defusedxml]
 python3-dev:
   debian: [python3-dev]
@@ -5568,6 +5624,7 @@ python3-paramiko:
   debian: [python3-paramiko]
   fedora: [python3-paramiko]
   gentoo: [dev-python/paramiko]
+  rhel: ['python%{python3_pkgversion}-paramiko']
   ubuntu: [python3-paramiko]
 python3-pcg-gazebo-pip:
   debian:
@@ -5861,6 +5918,7 @@ python3-rospkg:
   osx:
     pip:
       packages: [rospkg]
+  rhel: ['python%{python3_pkgversion}-rospkg']
   slackware:
     pip:
       packages: [rospkg]
@@ -5880,6 +5938,7 @@ python3-rospkg-modules:
   osx:
     pip:
       packages: [rospkg]
+  rhel: ['python%{python3_pkgversion}-rospkg']
   slackware:
     pip:
       packages: [rospkg]
