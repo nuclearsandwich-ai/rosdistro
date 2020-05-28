@@ -670,7 +670,6 @@ python-bluez:
   debian: [python-bluez]
   fedora: [pybluez]
   gentoo: [dev-python/pybluez]
-  rhel: [python-bluez]
   ubuntu: [python-bluez]
 python-bokeh-pip:
   debian:
@@ -1206,7 +1205,8 @@ python-crypto:
 python-cryptography:
   debian: [python-cryptography]
   gentoo: [dev-python/cryptography]
-  rhel: [python2-cryptography]
+  rhel:
+    '7': [python2-cryptography]
   ubuntu: [python-cryptography]
 python-cvxopt:
   arch: [python-cvxopt]
@@ -1219,7 +1219,6 @@ python-cwiid:
   debian: [python-cwiid]
   fedora: [cwiid]
   gentoo: ['app-misc/cwiid[python]']
-  rhel: [cwiid]
   ubuntu: [python-cwiid]
 python-cython-pip:
   arch:
@@ -1627,7 +1626,7 @@ python-ftdi1:
 python-funcsigs:
   debian: [python-funcsigs]
   fedora: [python-funcsigs]
-  rhel: [python-funcsigs]
+  rhel: [python2-funcsigs]
   ubuntu: [python-funcsigs]
 python-future:
   debian: [python-future]
@@ -2268,7 +2267,8 @@ python-kml:
 python-kombu:
   debian: [python-kombu]
   fedora: [python-kombu]
-  rhel: [python-kombu]
+  rhel:
+    '7': [python-kombu]
   ubuntu: [python-kombu]
 python-kombu-pip:
   ubuntu:
@@ -2354,7 +2354,9 @@ python-lxml:
   osx:
     pip:
       packages: [lxml]
-  rhel: [python-lxml]
+  rhel:
+    '*': [python2-lxml]
+    '7': [python-lxml]
   ubuntu: [python-lxml]
 python-lzf-pip:
   debian:
@@ -2689,7 +2691,7 @@ python-numpy:
   osx:
     pip:
       packages: [numpy]
-  rhel: [numpy]
+  rhel: [python2-numpy]
   slackware: [numpy]
   ubuntu:
     artful: [python-numpy]
@@ -2780,9 +2782,6 @@ python-open3d-pip:
 python-opencv:
   arch: [opencv, python2-numpy]
   debian: [python-opencv]
-  fedora:
-    '*': null
-    '29': [opencv-python]
   freebsd: [py27-opencv]
   gentoo: ['media-libs/opencv[python]']
   openembedded: [opencv@meta-oe]
@@ -2963,7 +2962,7 @@ python-pathtools:
 python-pbr:
   debian: [python-pbr]
   fedora: [python-pbr]
-  rhel: [python-pbr]
+  rhel: [python2-pbr]
   ubuntu: [python-pbr]
 python-pcapy:
   arch: [python2-pcapy]
@@ -3232,7 +3231,7 @@ python-pycodestyle:
   debian: [pycodestyle]
   fedora: [python-pycodestyle]
   gentoo: [dev-python/pycodestyle]
-  rhel: [python-pycodestyle]
+  rhel: [python2-pycodestyle]
   ubuntu: [pycodestyle]
 python-pycryptodome:
   arch: [python2-pycryptodome]
@@ -3561,6 +3560,12 @@ python-pytest:
   fedora: [python-pytest]
   gentoo: [dev-python/pytest]
   ubuntu: [python-pytest]
+python-pytest-cov:
+  arch: [python2-pytest-cov]
+  debian: [python-pytest-cov]
+  fedora: [python-pytest-cov]
+  gentoo: [dev-python/pytest-cov]
+  ubuntu: [python-pytest-cov]
 python-pytest-dependency-pip:
   debian:
     pip:
@@ -3674,7 +3679,8 @@ python-qt-bindings:
   gentoo: [dev-python/pyside, dev-python/PyQt4]
   macports: [p27-pyqt4]
   opensuse: [python-qt4-devel]
-  rhel: [PyQt4, PyQt4-devel, sip-devel]
+  rhel:
+    '7': [PyQt4, PyQt4-devel, sip-devel]
   ubuntu:
     '*': [python-pyside, libpyside-dev, libshiboken-dev, shiboken, python-qt4, python-qt4-dev, python-sip-dev]
     lucid: [python-qt4, python-qt4-dev, python-sip-dev]
@@ -4006,11 +4012,6 @@ python-rpi.gpio:
     stretch:
       pip:
         packages: [RPi.GPIO]
-  fedora:
-    '25':
-      pip:
-        packages: [RPi.GPIO]
-    '26': [python-rpi-gpio]
   ubuntu:
     artful: [python-rpi.gpio]
     bionic: [python-rpi.gpio]
@@ -4290,7 +4291,8 @@ python-sip:
   macports: [py27-sip]
   openembedded: [sip@meta-oe]
   opensuse: [python-sip-devel]
-  rhel: [sip-devel]
+  rhel:
+    '7': [sip-devel]
   slackware:
     slackpkg:
       packages: [sip]
@@ -4582,9 +4584,6 @@ python-tabulate:
   debian:
     buster: [python-tabulate]
     stretch: [python-tabulate]
-  fedora:
-    '23': [python-tabulate]
-    '24': [python-tabulate]
   gentoo: [dev-python/tabulate]
   ubuntu:
     artful: [python-tabulate]
@@ -5283,6 +5282,7 @@ python3-asyncssh:
 python3-autobahn:
   debian: [python3-autobahn]
   fedora: [python3-autobahn]
+  gentoo: [dev-python/autobahn]
   rhel:
     '*': ['python%{python3_pkgversion}-autobahn']
     '7': null
@@ -5290,6 +5290,7 @@ python3-autobahn:
 python3-babeltrace:
   debian: [python3-babeltrace]
   fedora: [python3-babeltrace]
+  gentoo: [dev-util/babeltrace]
   rhel: []
   ubuntu: [python3-babeltrace]
 python3-backoff-pip:
@@ -5368,6 +5369,12 @@ python3-catkin-pkg-modules:
       packages: [catkin-pkg]
   rhel: ['python%{python3_pkgversion}-catkin_pkg']
   ubuntu: [python3-catkin-pkg-modules]
+python3-click:
+  debian: [python3-click]
+  fedora: [python3-click]
+  gentoo: [dev-python/click]
+  rhel: ['python%{python3_pkgversion}-click']
+  ubuntu: [python3-click]
 python3-collada-pip:
   debian:
     pip:
@@ -5387,6 +5394,7 @@ python3-coverage:
 python3-cryptography:
   debian: [python3-cryptography]
   fedora: [python3-cryptography]
+  gentoo: [dev-python/cryptography]
   rhel: ['python%{python3_pkgversion}-cryptography']
   ubuntu: [python3-cryptography]
 python3-datadog-pip:
@@ -5436,6 +5444,7 @@ python3-docker:
   arch: [python-docker]
   debian: [python3-docker]
   fedora: [python3-docker]
+  gentoo: [dev-python/docker-py]
   rhel:
     '*': []
     '7': ['python%{python3_pkgversion}-docker']
@@ -5444,6 +5453,7 @@ python3-docutils:
   arch: [python-docutils]
   debian: [python3-docutils]
   fedora: [python3-docutils]
+  gentoo: [dev-python/docutils]
   ubuntu: [python3-docutils]
 python3-empy:
   debian:
@@ -5486,6 +5496,7 @@ python3-flake8:
 python3-future:
   debian: [python3-future]
   fedora: [python3-future]
+  gentoo: [dev-python/future]
   rhel: ['python%{python3_pkgversion}-future']
   ubuntu: [python3-future]
 python3-gi:
@@ -5503,6 +5514,7 @@ python3-gitlab:
     stretch:
       pip:
         packages: [python-gitlab]
+  gentoo: [dev-vcs/python-gitlab]
   ubuntu:
     '*': [python3-gitlab]
     artful:
@@ -5538,6 +5550,7 @@ python3-grpcio:
 python3-hypothesis:
   debian: [python3-hypothesis]
   fedora: [python3-hypothesis]
+  gentoo: [dev-python/hypothesis]
   ubuntu: [python3-hypothesis]
 python3-ifcfg:
   debian:
@@ -5567,9 +5580,7 @@ python3-lark-parser:
   debian:
     buster: [python3-lark-parser]
     stretch: [python3-lark-parser]
-  fedora:
-    '*': [python3-lark-parser]
-    '28': null
+  fedora: [python3-lark-parser]
   gentoo: [dev-python/lark]
   openembedded: [python3-lark-parser@meta-ros]
   rhel: ['python%{python3_pkgversion}-lark-parser']
@@ -5658,6 +5669,7 @@ python3-opencv:
   debian:
     buster: [python3-opencv]
   fedora: [python3-opencv]
+  gentoo: ['media-libs/opencv[python]']
   openembedded: [opencv@meta-oe]
   rhel: []
   ubuntu:
@@ -5704,7 +5716,6 @@ python3-pep8:
     jessie: [python3-pep8]
     stretch: [python3-pep8]
   fedora:
-    '*': null
     '30': [python3-pep8]
     '31': [python3-pep8]
   gentoo: [dev-python/pep8]
@@ -5770,7 +5781,6 @@ python3-pyaudio:
   osx:
     pip:
       packages: [pyaudio]
-  rhel: ['python%{python3_pkgversion}-pyaudio']
   ubuntu: [python3-pyaudio]
 python3-pycodestyle:
   arch: [python-pycodestyle]
@@ -6314,7 +6324,8 @@ wxpython:
   macports: [py27-wxpython, py27-gobject, py27-gtk, py27-cairo]
   openembedded: [wxpython@meta-ros]
   opensuse: [python-wxGTK]
-  rhel: [wxPython-devel]
+  rhel:
+    '7': [wxPython-devel]
   ubuntu:
     artful: [python-wxgtk3.0]
     bionic: [python-wxgtk3.0]
