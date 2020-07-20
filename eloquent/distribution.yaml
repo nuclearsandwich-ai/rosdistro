@@ -5,6 +5,7 @@
 release_platforms:
   fedora:
   - '31'
+  - '32'
   rhel:
   - '7'
   - '8'
