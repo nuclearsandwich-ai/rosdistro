@@ -5,6 +5,7 @@
 release_platforms:
   fedora:
   - '31'
+  - '32'
   rhel:
   - '7'
   - '8'
@@ -599,10 +600,9 @@ repositories:
       url: https://github.com/ros2-gbp-rpm/ecl_lite-release.git
       version: 1.0.6-1
     source:
-      test_pull_requests: true
       type: git
       url: https://github.com/stonier/ecl_lite.git
-      version: devel
+      version: release/1.0.x
     status: maintained
   ecl_tools:
     doc:
@@ -619,7 +619,6 @@ repositories:
       url: https://github.com/ros2-gbp-rpm/ecl_tools-release.git
       version: 1.0.2-1
     source:
-      test_pull_requests: true
       type: git
       url: https://github.com/stonier/ecl_tools.git
       version: devel
@@ -983,7 +982,7 @@ repositories:
   kdl_parser:
     doc:
       type: git
-      url: https://github.com/ros2/kdl_parser.git
+      url: https://github.com/ros/kdl_parser.git
       version: eloquent
     release:
       tags:
@@ -993,7 +992,7 @@ repositories:
     source:
       test_pull_requests: true
       type: git
-      url: https://github.com/ros2/kdl_parser.git
+      url: https://github.com/ros/kdl_parser.git
       version: eloquent
     status: maintained
   kobuki_core:
@@ -1222,7 +1221,7 @@ repositories:
       tags:
         release: release/eloquent/{package}/{version}
       url: https://github.com/ros2-gbp-rpm/marti_common-release.git
-      version: 3.2.0-1
+      version: 3.3.0-1
     source:
       test_pull_requests: true
       type: git
@@ -1262,7 +1261,7 @@ repositories:
       tags:
         release: release/eloquent/{package}/{version}
       url: https://github.com/ros2-gbp-rpm/mavlink-gbp-release.git
-      version: 2020.6.6-1
+      version: 2020.7.7-1
     source:
       type: git
       url: https://github.com/mavlink/mavlink-gbp-release.git
@@ -1323,7 +1322,7 @@ repositories:
       tags:
         release: release/eloquent/{package}/{version}
       url: https://github.com/ros2-gbp-rpm/navigation2-release.git
-      version: 0.3.4-1
+      version: 0.3.5-1
     source:
       test_pull_requests: true
       type: git
@@ -2183,6 +2182,19 @@ repositories:
       url: https://github.com/ros2/ros1_bridge.git
       version: eloquent
     status: maintained
+  ros2-lgsvl-bridge:
+    release:
+      packages:
+      - lgsvl_bridge
+      tags:
+        release: release/eloquent/{package}/{version}
+      url: https://github.com/ros2-gbp-rpm/ros2-lgsvl-bridge-release.git
+      version: 0.1.0-1
+    source:
+      type: git
+      url: https://github.com/lgsvl/ros2-lgsvl-bridge.git
+      version: master
+    status: developed
   ros2_ouster_driver:
     doc:
       type: git
@@ -2221,7 +2233,7 @@ repositories:
       tags:
         release: release/eloquent/{package}/{version}
       url: https://github.com/ros2-gbp-rpm/ros2_planning_system-release.git
-      version: 0.0.7-1
+      version: 0.0.9-1
     source:
       type: git
       url: https://github.com/IntelligentRoboticsLabs/ros2_planning_system.git
@@ -2714,7 +2726,7 @@ repositories:
     doc:
       type: git
       url: https://github.com/ros-visualization/rqt_publisher.git
-      version: crystal-devel
+      version: dashing-devel
     release:
       tags:
         release: release/eloquent/{package}/{version}
@@ -2723,7 +2735,7 @@ repositories:
     source:
       type: git
       url: https://github.com/ros-visualization/rqt_publisher.git
-      version: crystal-devel
+      version: dashing-devel
     status: maintained
   rqt_py_console:
     doc:
@@ -3172,6 +3184,21 @@ repositories:
       url: https://gitlab.com/micro-ROS/ros_tracing/tracetools_analysis.git
       version: eloquent
     status: developed
+  turtlebot3_msgs:
+    doc:
+      type: git
+      url: https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+      version: eloquent-devel
+    release:
+      tags:
+        release: release/eloquent/{package}/{version}
+      url: https://github.com/ros2-gbp-rpm/turtlebot3_msgs-release.git
+      version: 2.2.1-2
+    source:
+      type: git
+      url: https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+      version: eloquent-devel
+    status: developed
   turtlesim:
     doc:
       type: git
@@ -3349,7 +3376,7 @@ repositories:
     doc:
       type: git
       url: https://github.com/ros2/variants.git
-      version: master
+      version: eloquent
     release:
       packages:
       - desktop
@@ -3363,7 +3390,7 @@ repositories:
       test_pull_requests: true
       type: git
       url: https://github.com/ros2/variants.git
-      version: master
+      version: eloquent
     status: maintained
   velocity_smoother:
     doc:
@@ -3381,6 +3408,27 @@ repositories:
       url: https://github.com/kobuki-base/velocity_smoother.git
       version: devel
     status: maintained
+  velodyne:
+    doc:
+      type: git
+      url: https://github.com/ros-drivers/velodyne.git
+      version: ros2
+    release:
+      packages:
+      - velodyne
+      - velodyne_driver
+      - velodyne_laserscan
+      - velodyne_msgs
+      - velodyne_pointcloud
+      tags:
+        release: release/eloquent/{package}/{version}
+      url: https://github.com/ros2-gbp-rpm/velodyne-release.git
+      version: 2.1.0-1
+    source:
+      type: git
+      url: https://github.com/ros-drivers/velodyne.git
+      version: ros2
+    status: developed
   vision_msgs:
     doc:
       type: git
