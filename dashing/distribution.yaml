@@ -1022,6 +1022,21 @@ repositories:
       url: https://github.com/swri-robotics/gps_umd.git
       version: dashing-devel
     status: maintained
+  grbl_ros:
+    doc:
+      type: git
+      url: https://github.com/flynneva/grbl_ros.git
+      version: gh-pages
+    release:
+      tags:
+        release: release/dashing/{package}/{version}
+      url: https://github.com/flynneva/grbl_ros-release.git
+      version: 0.0.2-1
+    source:
+      type: git
+      url: https://github.com/flynneva/grbl_ros.git
+      version: main
+    status: developed
   gtsam:
     doc:
       type: git
@@ -1117,6 +1132,30 @@ repositories:
       test_pull_requests: true
       type: git
       url: https://github.com/ros-perception/image_common.git
+      version: dashing
+    status: maintained
+  image_pipeline:
+    doc:
+      type: git
+      url: https://github.com/ros-perception/image_pipeline.git
+      version: dashing
+    release:
+      packages:
+      - camera_calibration
+      - depth_image_proc
+      - image_pipeline
+      - image_proc
+      - image_publisher
+      - image_rotate
+      - image_view
+      - stereo_image_proc
+      tags:
+        release: release/dashing/{package}/{version}
+      url: https://github.com/ros2-gbp/image_pipeline-release.git
+      version: 2.1.0-1
+    source:
+      type: git
+      url: https://github.com/ros-perception/image_pipeline.git
       version: dashing
     status: maintained
   image_transport_plugins:
@@ -2309,6 +2348,24 @@ repositories:
       url: https://github.com/ros2/rmw_fastrtps.git
       version: dashing
     status: developed
+  rmw_gurumdds:
+    doc:
+      type: git
+      url: https://github.com/ros2/rmw_gurumdds.git
+      version: dashing
+    release:
+      packages:
+      - rmw_gurumdds_cpp
+      - rmw_gurumdds_shared_cpp
+      tags:
+        release: release/dashing/{package}/{version}
+      url: https://github.com/ros2-gbp/rmw_gurumdds-release.git
+      version: 0.7.8-1
+    source:
+      type: git
+      url: https://github.com/ros2/rmw_gurumdds.git
+      version: dashing
+    status: developed
   rmw_implementation:
     doc:
       type: git
@@ -2842,6 +2899,23 @@ repositories:
       url: https://github.com/ros2/rosidl_typesupport_fastrtps.git
       version: dashing
     status: developed
+  rosidl_typesupport_gurumdds:
+    doc:
+      type: git
+      url: https://github.com/ros2/rosidl_typesupport_gurumdds.git
+      version: dashing
+    release:
+      packages:
+      - gurumdds_cmake_module
+      tags:
+        release: release/dashing/{package}/{version}
+      url: https://github.com/ros2-gbp/rosidl_typesupport_gurumdds-release.git
+      version: 0.7.7-1
+    source:
+      type: git
+      url: https://github.com/ros2/rosidl_typesupport_gurumdds.git
+      version: dashing
+    status: developed
   rosidl_typesupport_opensplice:
     doc:
       type: git
@@ -2932,7 +3006,7 @@ repositories:
     doc:
       type: git
       url: https://github.com/ros-visualization/rqt_graph.git
-      version: crystal-devel
+      version: dashing-devel
     release:
       tags:
         release: release/dashing/{package}/{version}
@@ -2942,7 +3016,7 @@ repositories:
       test_pull_requests: true
       type: git
       url: https://github.com/ros-visualization/rqt_graph.git
-      version: crystal-devel
+      version: dashing-devel
     status: maintained
   rqt_image_view:
     doc:
@@ -3029,7 +3103,7 @@ repositories:
       tags:
         release: release/dashing/{package}/{version}
       url: https://github.com/ros2-gbp/rqt_reconfigure-release.git
-      version: 1.0.4-1
+      version: 1.0.6-1
     source:
       test_pull_requests: true
       type: git
@@ -3265,7 +3339,7 @@ repositories:
       tags:
         release: release/dashing/{package}/{version}
       url: https://github.com/microROS/system_modes-release.git
-      version: 0.2.1-7
+      version: 0.3.0-1
     source:
       type: git
       url: https://github.com/micro-ROS/system_modes.git
@@ -3512,7 +3586,7 @@ repositories:
       tags:
         release: release/dashing/{package}/{version}
       url: https://github.com/ros2-gbp/ros_tutorials-release.git
-      version: 1.0.2-1
+      version: 1.0.3-1
     source:
       test_abi: true
       test_pull_requests: true
