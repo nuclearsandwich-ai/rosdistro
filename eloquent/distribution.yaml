@@ -538,6 +538,22 @@ repositories:
       url: https://github.com/chapulina/dolly.git
       version: master
     status: maintained
+  dynamic-graph:
+    doc:
+      type: git
+      url: https://github.com/stack-of-tasks/dynamic-graph.git
+      version: devel
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros2-gbp-rpm/dynamic-graph-ros-release.git
+      version: 4.2.2-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/stack-of-tasks/dynamic-graph.git
+      version: devel
+    status: maintained
   dynamixel_sdk:
     doc:
       type: git
@@ -590,10 +606,9 @@ repositories:
       url: https://github.com/ros2-gbp-rpm/ecl_core-release.git
       version: 1.0.7-1
     source:
-      test_pull_requests: true
       type: git
       url: https://github.com/stonier/ecl_core.git
-      version: devel
+      version: release/1.0.x
     status: maintained
   ecl_lite:
     doc:
@@ -1023,7 +1038,7 @@ repositories:
       tags:
         release: release/eloquent/{package}/{version}
       url: https://github.com/ros2-gbp-rpm/kdl_parser-release.git
-      version: 2.2.0-1
+      version: 2.2.1-1
     source:
       test_pull_requests: true
       type: git
@@ -1048,7 +1063,7 @@ repositories:
       test_pull_requests: true
       type: git
       url: https://github.com/kobuki-base/kobuki_core.git
-      version: devel
+      version: release/1.0.x
     status: maintained
   kobuki_firmware:
     release:
@@ -1738,10 +1753,9 @@ repositories:
       url: https://github.com/ros2-gbp-rpm/py_trees_ros_tutorials-release.git
       version: 2.0.2-1
     source:
-      test_pull_requests: true
       type: git
       url: https://github.com/splintered-reality/py_trees_ros_tutorials.git
-      version: devel
+      version: release/2.0.x
     status: developed
   py_trees_ros_viewer:
     doc:
@@ -2268,7 +2282,7 @@ repositories:
       tags:
         release: release/eloquent/{package}/{version}
       url: https://github.com/ros2-gbp-rpm/ros2_planning_system-release.git
-      version: 0.0.10-1
+      version: 0.0.12-1
     source:
       type: git
       url: https://github.com/IntelligentRoboticsLabs/ros2_planning_system.git
@@ -2688,7 +2702,7 @@ repositories:
     doc:
       type: git
       url: https://github.com/ros-visualization/rqt_graph.git
-      version: crystal-devel
+      version: dashing-devel
     release:
       tags:
         release: release/eloquent/{package}/{version}
@@ -2698,7 +2712,7 @@ repositories:
       test_pull_requests: true
       type: git
       url: https://github.com/ros-visualization/rqt_graph.git
-      version: crystal-devel
+      version: dashing-devel
     status: maintained
   rqt_image_view:
     doc:
@@ -3243,7 +3257,7 @@ repositories:
       tags:
         release: release/eloquent/{package}/{version}
       url: https://github.com/ros2-gbp-rpm/ros_tutorials-release.git
-      version: 1.1.0-1
+      version: 1.1.2-1
     source:
       test_abi: true
       test_pull_requests: true

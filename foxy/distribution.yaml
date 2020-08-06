@@ -299,6 +299,7 @@ repositories:
       url: https://github.com/ros2-gbp/common_interfaces-release.git
       version: 2.0.3-1
     source:
+      test_abi: true
       test_pull_requests: true
       type: git
       url: https://github.com/ros2/common_interfaces.git
@@ -313,7 +314,7 @@ repositories:
       tags:
         release: release/foxy/{package}/{version}
       url: https://github.com/ros2-gbp/console_bridge_vendor-release.git
-      version: 1.2.1-1
+      version: 1.2.2-1
     source:
       test_abi: true
       test_pull_requests: true
@@ -346,11 +347,26 @@ repositories:
       tags:
         release: release/foxy/{package}/{version}
       url: https://github.com/ros-gbp/control_msgs-release.git
-      version: 2.4.0-1
+      version: 2.4.1-1
     source:
       type: git
       url: https://github.com/ros-controls/control_msgs.git
       version: foxy-devel
+    status: maintained
+  control_toolbox:
+    doc:
+      type: git
+      url: https://github.com/ros-controls/control_toolbox.git
+      version: ros2-master
+    release:
+      tags:
+        release: release/foxy/{package}/{version}
+      url: https://github.com/ros-gbp/control_toolbox-release.git
+      version: 2.0.1-1
+    source:
+      type: git
+      url: https://github.com/ros-controls/control_toolbox.git
+      version: ros2-master
     status: maintained
   cyclonedds:
     release:
@@ -428,12 +444,28 @@ repositories:
       tags:
         release: release/foxy/{package}/{version}
       url: https://github.com/ros2-gbp/diagnostics-release.git
-      version: 2.0.3-1
+      version: 2.0.4-2
     source:
       test_pull_requests: true
       type: git
       url: https://github.com/ros/diagnostics.git
       version: foxy
+    status: maintained
+  dynamic-graph:
+    doc:
+      type: git
+      url: https://github.com/stack-of-tasks/dynamic-graph.git
+      version: devel
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/stack-of-tasks/dynamic-graph-ros-release.git
+      version: 4.2.2-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/stack-of-tasks/dynamic-graph.git
+      version: devel
     status: maintained
   dynamixel_sdk:
     doc:
@@ -450,6 +482,48 @@ repositories:
       url: https://github.com/ROBOTIS-GIT/DynamixelSDK.git
       version: foxy-devel
     status: developed
+  ecl_core:
+    doc:
+      type: git
+      url: https://github.com/stonier/ecl_core.git
+      version: release/1.1.x
+    release:
+      packages:
+      - ecl_command_line
+      - ecl_concepts
+      - ecl_containers
+      - ecl_converters
+      - ecl_core
+      - ecl_core_apps
+      - ecl_devices
+      - ecl_eigen
+      - ecl_exceptions
+      - ecl_filesystem
+      - ecl_formatters
+      - ecl_geometry
+      - ecl_ipc
+      - ecl_linear_algebra
+      - ecl_manipulators
+      - ecl_math
+      - ecl_mobile_robot
+      - ecl_mpl
+      - ecl_sigslots
+      - ecl_statistics
+      - ecl_streams
+      - ecl_threads
+      - ecl_time
+      - ecl_type_traits
+      - ecl_utilities
+      tags:
+        release: release/foxy/{package}/{version}
+      url: https://github.com/yujinrobot-release/ecl_core-release.git
+      version: 1.1.0-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/stonier/ecl_core.git
+      version: devel
+    status: maintained
   ecl_lite:
     doc:
       type: git
@@ -593,7 +667,7 @@ repositories:
       tags:
         release: release/foxy/{package}/{version}
       url: https://github.com/ros2-gbp/fastrtps-release.git
-      version: 2.0.0-3
+      version: 2.0.1-1
     source:
       test_commits: false
       test_pull_requests: false
@@ -721,7 +795,7 @@ repositories:
       tags:
         release: release/foxy/{package}/{version}
       url: https://github.com/ros2-gbp/geometry2-release.git
-      version: 0.13.4-1
+      version: 0.13.5-1
     source:
       test_pull_requests: true
       type: git
@@ -824,7 +898,7 @@ repositories:
       tags:
         release: release/foxy/{package}/{version}
       url: https://github.com/ros2-gbp/image_pipeline-release.git
-      version: 2.1.1-1
+      version: 2.2.0-2
     source:
       test_pull_requests: true
       type: git
@@ -923,6 +997,36 @@ repositories:
       url: https://github.com/ros/kdl_parser.git
       version: foxy
     status: maintained
+  kobuki_core:
+    doc:
+      type: git
+      url: https://github.com/kobuki-base/kobuki_core.git
+      version: release/1.1.x
+    release:
+      packages:
+      - kobuki_dock_drive
+      - kobuki_driver
+      tags:
+        release: release/foxy/{package}/{version}
+      url: https://github.com/stonier/kobuki_core-release.git
+      version: 1.1.0-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/kobuki-base/kobuki_core.git
+      version: devel
+    status: maintained
+  kobuki_firmware:
+    doc:
+      type: git
+      url: https://github.com/kobuki-base/kobuki_firmware.git
+      version: release/1.2.x
+    release:
+      tags:
+        release: release/foxy/{package}/{version}
+      url: https://github.com/stonier/kobuki_firmware-release.git
+      version: 1.2.0-1
+    status: maintained
   laser_geometry:
     doc:
       type: git
@@ -1013,6 +1117,23 @@ repositories:
         release: release/foxy/{package}/{version}
       url: https://github.com/ros2-gbp/libg2o-release.git
       version: 2020.5.29-1
+    status: maintained
+  librealsense:
+    doc:
+      type: git
+      url: https://github.com/IntelRealSense/librealsense.git
+      version: ros2debian
+    release:
+      packages:
+      - librealsense2
+      tags:
+        release: release/foxy/{package}/{version}
+      url: https://github.com/ros2-gbp/librealsense-release.git
+      version: 2.34.0-3
+    source:
+      type: git
+      url: https://github.com/IntelRealSense/librealsense.git
+      version: ros2debian
     status: maintained
   libstatistics_collector:
     doc:
@@ -1448,16 +1569,32 @@ repositories:
       url: https://github.com/splintered-reality/py_trees.git
       version: devel
     status: developed
+  py_trees_js:
+    doc:
+      type: git
+      url: https://github.com/splintered-reality/py_trees_js.git
+      version: release/0.6.x
+    release:
+      tags:
+        release: release/foxy/{package}/{version}
+      url: https://github.com/stonier/py_trees_js-release.git
+      version: 0.6.3-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/splintered-reality/py_trees_js.git
+      version: devel
+    status: developed
   py_trees_ros:
     doc:
       type: git
       url: https://github.com/splintered-reality/py_trees_ros.git
-      version: release/2.0.x
+      version: release/2.1.x
     release:
       tags:
         release: release/foxy/{package}/{version}
       url: https://github.com/stonier/py_trees_ros-release.git
-      version: 2.0.11-1
+      version: 2.1.0-1
     source:
       test_pull_requests: true
       type: git
@@ -1478,6 +1615,38 @@ repositories:
       type: git
       url: https://github.com/splintered-reality/py_trees_ros_interfaces.git
       version: release/1.2.x
+    status: developed
+  py_trees_ros_tutorials:
+    doc:
+      type: git
+      url: https://github.com/splintered-reality/py_trees_ros_tutorials.git
+      version: release/2.1.x
+    release:
+      tags:
+        release: release/foxy/{package}/{version}
+      url: https://github.com/stonier/py_trees_ros_tutorials-release.git
+      version: 2.1.0-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/splintered-reality/py_trees_ros_tutorials.git
+      version: devel
+    status: developed
+  py_trees_ros_viewer:
+    doc:
+      type: git
+      url: https://github.com/splintered-reality/py_trees_ros_viewer.git
+      version: release/0.2.x
+    release:
+      tags:
+        release: release/foxy/{package}/{version}
+      url: https://github.com/stonier/py_trees_ros_viewer-release.git
+      version: 0.2.3-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/splintered-reality/py_trees_ros_viewer.git
+      version: devel
     status: developed
   python_cmake_module:
     doc:
@@ -1526,7 +1695,7 @@ repositories:
       tags:
         release: release/foxy/{package}/{version}
       url: https://github.com/ros2-gbp/qt_gui_core-release.git
-      version: 1.1.0-1
+      version: 1.1.1-1
     source:
       test_pull_requests: true
       type: git
@@ -1563,7 +1732,7 @@ repositories:
       tags:
         release: release/foxy/{package}/{version}
       url: https://github.com/ros2-gbp/rcl-release.git
-      version: 1.1.6-1
+      version: 1.1.7-1
     source:
       test_abi: true
       test_pull_requests: true
@@ -1612,6 +1781,7 @@ repositories:
       url: https://github.com/ros2-gbp/rcl_logging-release.git
       version: 1.0.1-1
     source:
+      test_abi: true
       test_pull_requests: true
       type: git
       url: https://github.com/ros2/rcl_logging.git
@@ -1650,7 +1820,7 @@ repositories:
       tags:
         release: release/foxy/{package}/{version}
       url: https://github.com/ros2-gbp/rclcpp-release.git
-      version: 2.0.2-1
+      version: 2.1.0-1
     source:
       test_pull_requests: true
       type: git
@@ -1792,6 +1962,7 @@ repositories:
       url: https://github.com/ros2-gbp/rmw_connext-release.git
       version: 1.0.1-1
     source:
+      test_abi: true
       test_pull_requests: true
       type: git
       url: https://github.com/ros2/rmw_connext.git
@@ -1851,6 +2022,24 @@ repositories:
       test_pull_requests: true
       type: git
       url: https://github.com/ros2/rmw_fastrtps.git
+      version: foxy
+    status: developed
+  rmw_gurumdds:
+    doc:
+      type: git
+      url: https://github.com/ros2/rmw_gurumdds.git
+      version: foxy
+    release:
+      packages:
+      - rmw_gurumdds_cpp
+      - rmw_gurumdds_shared_cpp
+      tags:
+        release: release/foxy/{package}/{version}
+      url: https://github.com/ros2-gbp/rmw_gurumdds-release.git
+      version: 1.0.2-1
+    source:
+      type: git
+      url: https://github.com/ros2/rmw_gurumdds.git
       version: foxy
     status: developed
   rmw_implementation:
@@ -1931,6 +2120,26 @@ repositories:
       url: https://github.com/lgsvl/ros2-lgsvl-bridge.git
       version: master
     status: developed
+  ros2_intel_realsense:
+    doc:
+      type: git
+      url: https://github.com/intel/ros2_intel_realsense.git
+      version: refactor
+    release:
+      packages:
+      - realsense_examples
+      - realsense_msgs
+      - realsense_node
+      - realsense_ros
+      tags:
+        release: release/foxy/{package}/{version}
+      url: https://github.com/ros2-gbp/ros2_intel_realsense-release.git
+      version: 2.0.8-2
+    source:
+      type: git
+      url: https://github.com/intel/ros2_intel_realsense.git
+      version: refactor
+    status: maintained
   ros2_ouster_drivers:
     doc:
       type: git
@@ -1966,7 +2175,7 @@ repositories:
       tags:
         release: release/foxy/{package}/{version}
       url: https://gitlab.com/micro-ROS/ros_tracing/ros2_tracing-release.git
-      version: 1.0.1-2
+      version: 1.0.2-1
     source:
       test_abi: true
       type: git
@@ -2111,7 +2320,7 @@ repositories:
       tags:
         release: release/foxy/{package}/{version}
       url: https://github.com/ros2-gbp/rosbag2-release.git
-      version: 0.3.3-1
+      version: 0.3.4-1
     source:
       test_pull_requests: true
       type: git
@@ -2296,6 +2505,23 @@ repositories:
       url: https://github.com/ros2/rosidl_typesupport_fastrtps.git
       version: foxy
     status: developed
+  rosidl_typesupport_gurumdds:
+    doc:
+      type: git
+      url: https://github.com/ros2/rosidl_typesupport_gurumdds.git
+      version: foxy
+    release:
+      packages:
+      - gurumdds_cmake_module
+      tags:
+        release: release/foxy/{package}/{version}
+      url: https://github.com/ros2-gbp/rosidl_typesupport_gurumdds-release.git
+      version: 1.0.2-1
+    source:
+      type: git
+      url: https://github.com/ros2/rosidl_typesupport_gurumdds.git
+      version: foxy
+    status: developed
   rplidar_ros:
     release:
       tags:
@@ -2395,7 +2621,7 @@ repositories:
     doc:
       type: git
       url: https://github.com/ros-visualization/rqt_graph.git
-      version: crystal-devel
+      version: dashing-devel
     release:
       tags:
         release: release/foxy/{package}/{version}
@@ -2405,7 +2631,7 @@ repositories:
       test_pull_requests: true
       type: git
       url: https://github.com/ros-visualization/rqt_graph.git
-      version: crystal-devel
+      version: dashing-devel
     status: maintained
   rqt_image_view:
     doc:
@@ -2492,7 +2718,7 @@ repositories:
       tags:
         release: release/foxy/{package}/{version}
       url: https://github.com/ros2-gbp/rqt_reconfigure-release.git
-      version: 1.0.5-1
+      version: 1.0.6-1
     source:
       test_pull_requests: true
       type: git
@@ -2668,7 +2894,7 @@ repositories:
       tags:
         release: release/foxy/{package}/{version}
       url: https://github.com/yujinrobot-release/sophus-release.git
-      version: 1.2.0-1
+      version: 1.2.1-1
     source:
       type: git
       url: https://github.com/stonier/sophus.git
@@ -2718,7 +2944,7 @@ repositories:
       tags:
         release: release/foxy/{package}/{version}
       url: https://github.com/microROS/system_modes-release.git
-      version: 0.2.3-1
+      version: 0.3.0-1
     source:
       test_pull_requests: true
       type: git
@@ -2747,17 +2973,17 @@ repositories:
     doc:
       type: git
       url: https://github.com/ros2/teleop_twist_joy.git
-      version: dashing
+      version: eloquent
     release:
       tags:
         release: release/foxy/{package}/{version}
       url: https://github.com/ros2-gbp/teleop_twist_joy-release.git
-      version: 2.2.2-1
+      version: 2.3.0-1
     source:
       test_pull_requests: true
       type: git
       url: https://github.com/ros2/teleop_twist_joy.git
-      version: dashing
+      version: eloquent
     status: maintained
   teleop_twist_keyboard:
     doc:
@@ -2877,7 +3103,7 @@ repositories:
       tags:
         release: release/foxy/{package}/{version}
       url: https://github.com/ros2-gbp/ros_tutorials-release.git
-      version: 1.2.4-1
+      version: 1.2.5-1
     source:
       test_pull_requests: true
       type: git
