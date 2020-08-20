@@ -134,7 +134,7 @@ repositories:
     release:
       tags:
         release: release/foxy/{package}/{version}
-      url: https://github.com/canonical/ament_nodl-release.git
+      url: https://github.com/ros2-gbp/ament_nodl-release.git
       version: 0.1.0-1
     source:
       type: git
@@ -188,6 +188,21 @@ repositories:
       url: https://github.com/AprilRobotics/apriltag.git
       version: master
     status: maintained
+  autoware_auto_msgs:
+    doc:
+      type: git
+      url: https://gitlab.com/autowarefoundation/autoware.auto/autoware_auto_msgs.git
+      version: master
+    release:
+      tags:
+        release: release/foxy/{package}/{version}
+      url: https://gitlab.com/autowarefoundation/autoware.auto/autoware_auto_msgs-release.git
+      version: 0.1.0-1
+    source:
+      type: git
+      url: https://gitlab.com/autowarefoundation/autoware.auto/autoware_auto_msgs.git
+      version: master
+    status: developed
   behaviortree_cpp:
     doc:
       type: git
@@ -239,6 +254,21 @@ repositories:
       type: git
       url: https://github.com/ros2/cartographer_ros.git
       version: dashing
+    status: maintained
+  casadi_vendor:
+    doc:
+      type: git
+      url: https://gitlab.com/autowarefoundation/autoware.auto/casadi_vendor.git
+      version: master
+    release:
+      tags:
+        release: release/foxy/{package}/{version}
+      url: https://gitlab.com/autowarefoundation/autoware.auto/casadi_vendor-release.git
+      version: 3.5.1-1
+    source:
+      type: git
+      url: https://gitlab.com/autowarefoundation/autoware.auto/casadi_vendor.git
+      version: master
     status: maintained
   cascade_lifecycle:
     doc:
@@ -449,6 +479,27 @@ repositories:
       test_pull_requests: true
       type: git
       url: https://github.com/ros/diagnostics.git
+      version: foxy
+    status: maintained
+  dolly:
+    doc:
+      type: git
+      url: https://github.com/chapulina/dolly.git
+      version: foxy
+    release:
+      packages:
+      - dolly
+      - dolly_follow
+      - dolly_gazebo
+      - dolly_ignition
+      tags:
+        release: release/foxy/{package}/{version}
+      url: https://github.com/chapulina/dolly-release.git
+      version: 0.3.0-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/chapulina/dolly.git
       version: foxy
     status: maintained
   dynamic-graph:
@@ -830,12 +881,27 @@ repositories:
       tags:
         release: release/foxy/{package}/{version}
       url: https://github.com/swri-robotics-gbp/gps_umd-release.git
-      version: 1.0.3-1
+      version: 1.0.4-1
     source:
       test_pull_requests: true
       type: git
       url: https://github.com/swri-robotics/gps_umd.git
       version: dashing-devel
+    status: developed
+  grbl_ros:
+    doc:
+      type: git
+      url: https://github.com/flynneva/grbl_ros.git
+      version: main
+    release:
+      tags:
+        release: release/foxy/{package}/{version}
+      url: https://github.com/flynneva/grbl_ros-release.git
+      version: 0.0.2-4
+    source:
+      type: git
+      url: https://github.com/flynneva/grbl_ros.git
+      version: main
     status: developed
   hls_lfcd_lds_driver:
     doc:
@@ -990,7 +1056,7 @@ repositories:
       tags:
         release: release/foxy/{package}/{version}
       url: https://github.com/ros2-gbp/kdl_parser-release.git
-      version: 2.4.0-1
+      version: 2.4.1-1
     source:
       test_pull_requests: true
       type: git
@@ -1009,7 +1075,7 @@ repositories:
       tags:
         release: release/foxy/{package}/{version}
       url: https://github.com/stonier/kobuki_core-release.git
-      version: 1.1.0-1
+      version: 1.1.1-1
     source:
       test_pull_requests: true
       type: git
@@ -1185,7 +1251,7 @@ repositories:
       tags:
         release: release/foxy/{package}/{version}
       url: https://github.com/swri-robotics-gbp/marti_common-release.git
-      version: 3.3.0-1
+      version: 3.3.1-1
     source:
       test_pull_requests: true
       type: git
@@ -1217,6 +1283,17 @@ repositories:
       url: https://github.com/swri-robotics/marti_messages.git
       version: dashing-devel
     status: developed
+  mavlink:
+    release:
+      tags:
+        release: release/foxy/{package}/{version}
+      url: https://github.com/mavlink/mavlink-gbp-release.git
+      version: 2020.8.8-1
+    source:
+      type: git
+      url: https://github.com/mavlink/mavlink-gbp-release.git
+      version: release/foxy/mavlink
+    status: maintained
   message_filters:
     doc:
       type: git
@@ -1287,7 +1364,7 @@ repositories:
       tags:
         release: release/foxy/{package}/{version}
       url: https://github.com/SteveMacenski/navigation2-release.git
-      version: 0.4.1-1
+      version: 0.4.2-1
     source:
       test_pull_requests: true
       type: git
@@ -1324,8 +1401,8 @@ repositories:
       - ros2nodl
       tags:
         release: release/foxy/{package}/{version}
-      url: https://github.com/canonical/nodl-release.git
-      version: 0.2.0-1
+      url: https://github.com/ros2-gbp/nodl-release.git
+      version: 0.3.0-1
     source:
       type: git
       url: https://github.com/ubuntu-robotics/nodl.git
@@ -1512,6 +1589,12 @@ repositories:
       url: https://github.com/ros-drivers/phidgets_drivers.git
       version: dashing
     status: maintained
+  plotjuggler_msgs:
+    release:
+      tags:
+        release: release/foxy/{package}/{version}
+      url: https://github.com/facontidavide/plotjuggler_msgs-release.git
+      version: 0.1.2-1
   pluginlib:
     doc:
       type: git
@@ -1562,7 +1645,7 @@ repositories:
       tags:
         release: release/foxy/{package}/{version}
       url: https://github.com/stonier/py_trees-release.git
-      version: 2.1.0-1
+      version: 2.1.1-1
     source:
       test_pull_requests: true
       type: git
@@ -1822,6 +1905,7 @@ repositories:
       url: https://github.com/ros2-gbp/rclcpp-release.git
       version: 2.1.0-1
     source:
+      test_abi: true
       test_pull_requests: true
       type: git
       url: https://github.com/ros2/rclcpp.git
@@ -1870,6 +1954,7 @@ repositories:
       url: https://github.com/ros2-gbp/rcutils-release.git
       version: 1.0.1-1
     source:
+      test_abi: true
       test_pull_requests: true
       type: git
       url: https://github.com/ros2/rcutils.git
@@ -1921,7 +2006,7 @@ repositories:
       tags:
         release: release/foxy/{package}/{version}
       url: https://github.com/ros2-gbp/resource_retriever-release.git
-      version: 2.3.2-1
+      version: 2.3.3-1
     source:
       test_pull_requests: true
       type: git
@@ -2114,11 +2199,11 @@ repositories:
       tags:
         release: release/foxy/{package}/{version}
       url: https://github.com/lgsvl/ros2-lgsvl-bridge-release.git
-      version: 0.1.0-1
+      version: 0.1.2-1
     source:
       type: git
       url: https://github.com/lgsvl/ros2-lgsvl-bridge.git
-      version: master
+      version: foxy-devel
     status: developed
   ros2_intel_realsense:
     doc:
@@ -2260,7 +2345,7 @@ repositories:
       tags:
         release: release/foxy/{package}/{version}
       url: https://github.com/ros2-gbp/ros_ign-release.git
-      version: 0.221.0-1
+      version: 0.221.1-1
     source:
       test_pull_requests: true
       type: git
@@ -2366,7 +2451,7 @@ repositories:
       tags:
         release: release/foxy/{package}/{version}
       url: https://github.com/ros2-gbp/rosidl-release.git
-      version: 1.0.1-1
+      version: 1.1.0-1
     source:
       test_abi: true
       test_pull_requests: true
@@ -2642,7 +2727,7 @@ repositories:
       tags:
         release: release/foxy/{package}/{version}
       url: https://github.com/ros2-gbp/rqt_image_view-release.git
-      version: 1.0.4-1
+      version: 1.1.0-1
     source:
       test_pull_requests: true
       type: git
@@ -2734,7 +2819,7 @@ repositories:
       tags:
         release: release/foxy/{package}/{version}
       url: https://github.com/ros2-gbp/rqt_robot_monitor-release.git
-      version: 1.0.1-1
+      version: 1.0.2-1
     source:
       type: git
       url: https://github.com/ros-visualization/rqt_robot_monitor.git
@@ -2932,6 +3017,21 @@ repositories:
       url: https://github.com/ros2/sros2.git
       version: foxy
     status: developed
+  system_metrics_collector:
+    doc:
+      type: git
+      url: https://github.com/ros-tooling/system_metrics_collector.git
+      version: foxy
+    release:
+      tags:
+        release: release/foxy/{package}/{version}
+      url: https://github.com/ros-tooling/system_metrics_collector-release.git
+      version: 0.1.0-1
+    source:
+      type: git
+      url: https://github.com/ros-tooling/system_metrics_collector.git
+      version: foxy
+    status: maintained
   system_modes:
     doc:
       type: git
@@ -3259,7 +3359,7 @@ repositories:
       tags:
         release: release/foxy/{package}/{version}
       url: https://gitlab.com/boldhearts/releases/ros2_v4l2_camera-release.git
-      version: 0.2.0-1
+      version: 0.2.1-3
     source:
       type: git
       url: https://gitlab.com/boldhearts/ros2_v4l2_camera.git
@@ -3306,6 +3406,21 @@ repositories:
       url: https://github.com/ros-drivers/velodyne.git
       version: ros2
     status: developed
+  vision_msgs:
+    doc:
+      type: git
+      url: https://github.com/Kukanani/vision_msgs.git
+      version: ros2
+    release:
+      tags:
+        release: release/foxy/{package}/{version}
+      url: https://github.com/Kukanani/vision_msgs-release.git
+      version: 2.0.0-1
+    source:
+      type: git
+      url: https://github.com/Kukanani/vision_msgs.git
+      version: ros2
+    status: maintained
   vision_opencv:
     doc:
       type: git
@@ -3364,7 +3479,7 @@ repositories:
       tags:
         release: release/foxy/{package}/{version}
       url: https://github.com/ros-gbp/xacro-release.git
-      version: 2.0.2-1
+      version: 2.0.3-1
     source:
       type: git
       url: https://github.com/ros/xacro.git
