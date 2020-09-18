@@ -40,7 +40,7 @@ repositories:
       - ament_cmake_version
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp-rpm/ament_cmake-release.git
+      url: https://github.com/cottsay/ament_cmake-release.git
       version: 0.8.2-1
     source:
       type: git
@@ -125,7 +125,7 @@ repositories:
       - ament_xmllint
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp-rpm/ament_lint-release.git
+      url: https://github.com/cottsay/ament_lint-release.git
       version: 0.8.1-1
     source:
       test_pull_requests: true
@@ -141,7 +141,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp-rpm/ament_package-release.git
+      url: https://github.com/cottsay/ament_package-release.git
       version: 0.8.9-1
     source:
       type: git
@@ -442,7 +442,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp-rpm/cyclonedds-release.git
+      url: https://github.com/cottsay/cyclonedds-release.git
       version: 0.5.1-2
     source:
       test_commits: false
@@ -766,7 +766,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp-rpm/fastrtps-release.git
+      url: https://github.com/cottsay/fastrtps-release.git
       version: 1.9.3-2
     source:
       test_commits: false
@@ -1848,7 +1848,7 @@ repositories:
       - qt_gui_py_common
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp-rpm/qt_gui_core-release.git
+      url: https://github.com/cottsay/qt_gui_core-release.git
       version: 1.0.9-1
     source:
       test_pull_requests: true
@@ -2203,7 +2203,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp-rpm/rmw_implementation-release.git
+      url: https://github.com/cottsay/rmw_implementation-release.git
       version: 0.8.2-2
     source:
       test_pull_requests: true
@@ -2431,7 +2431,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp-rpm/ros_workspace-release.git
+      url: https://github.com/cottsay/ros_workspace-release.git
       version: 1.0.1-1
     source:
       type: git
@@ -2592,7 +2592,7 @@ repositories:
       - rosidl_typesupport_cpp
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp-rpm/rosidl_typesupport-release.git
+      url: https://github.com/cottsay/rosidl_typesupport-release.git
       version: 0.8.0-2
     source:
       test_abi: true
@@ -2794,7 +2794,7 @@ repositories:
     release:
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp-rpm/rqt_plot-release.git
+      url: https://github.com/cottsay/rqt_plot-release.git
       version: 1.0.7-1
     source:
       type: git
@@ -2985,7 +2985,7 @@ repositories:
       - rviz_visual_testing_framework
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp-rpm/rviz-release.git
+      url: https://github.com/cottsay/rviz-release.git
       version: 7.0.5-1
     source:
       test_pull_requests: true
