@@ -2147,7 +2147,7 @@ repositories:
       - rmw_connext_shared_cpp
       tags:
         release: release/eloquent/{package}/{version}
-      url: https://github.com/ros2-gbp-rpm/rmw_connext-release.git
+      url: https://github.com/cottsay/rmw_connext-release.git
       version: 0.8.1-1
     source:
       test_pull_requests: true
