@@ -1681,6 +1681,8 @@ gv:
   gentoo: [app-text/gv]
   nixos: [gv]
   ubuntu: [gv]
+hackrf:
+  ubuntu: [hackrf]
 haproxy:
   debian: [haproxy]
   fedora: [haproxy]
@@ -3334,6 +3336,8 @@ libgts:
   gentoo: [sci-libs/gts]
   nixos: [gts]
   ubuntu: [libgts-dev]
+libhackrf-dev:
+  ubuntu: [libhackrf-dev]
 libhal-dev:
   arch:
     pacman:
@@ -3854,6 +3858,9 @@ libnss3-dev:
   gentoo: [=dev-libs/nss-3*]
   nixos: [nss]
   ubuntu: [libnss3-dev]
+libobs-dev:
+  ubuntu:
+    focal: [libobs-dev]
 libogg:
   arch: [libogg]
   debian: [libogg-dev]
@@ -5528,6 +5535,9 @@ libxxf86vm:
   opensuse: [xorg-x11-devel]
   rhel: [libXxf86vm-devel]
   ubuntu: [libxxf86vm-dev]
+libykpiv-dev:
+  ubuntu:
+    focal: [libykpiv-dev]
 libzip-dev:
   debian: [libzip-dev]
   fedora: [libzip-devel]
