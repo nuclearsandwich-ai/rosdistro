@@ -290,6 +290,9 @@ babeltrace:
   gentoo: [dev-util/babeltrace]
   nixos: [babeltrace]
   ubuntu: [babeltrace]
+bad_key:
+  rhel: [no-such-package]
+  ubuntu: [no-such-package]
 bazaar:
   arch: [bzr]
   debian: [bzr]
