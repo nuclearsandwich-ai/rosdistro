@@ -50,6 +50,6 @@ distributions:
     distribution_cache: http://repositories.ros.org/rosdistro_cache/noetic-cache.yaml.gz
   rolling:
     distribution: [rolling/distribution.yaml]
-    distribution_cache: http://repo.ros2.org/rosdistro_cache/rolling-cache.yaml.gz
+    distribution_cache: rolling/distribution-cache.yaml.gz
 type: index
 version: 3
