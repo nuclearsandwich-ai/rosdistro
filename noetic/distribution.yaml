@@ -7319,7 +7319,7 @@ repositories:
       - rostime
       tags:
         release: release/noetic/{package}/{version}
-      url: https://github.com/ros-gbp/roscpp_core-release.git
+      url: https://github.com/cottsay/roscpp_core-release.git
       version: 0.7.2-1
     source:
       test_pull_requests: true

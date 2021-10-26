@@ -89,7 +89,7 @@ distributions:
     python_version: 2
   noetic:
     distribution: [noetic/distribution.yaml]
-    distribution_cache: http://repositories.ros.org/rosdistro_cache/noetic-cache.yaml.gz
+    distribution_cache: noetic/distribution-cache.yaml.gz
     distribution_status: active
     distribution_type: ros1
     python_version: 3

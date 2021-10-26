@@ -47,7 +47,7 @@ distributions:
     distribution_cache: http://repositories.ros.org/rosdistro_cache/melodic-cache.yaml.gz
   noetic:
     distribution: [noetic/distribution.yaml]
-    distribution_cache: http://repositories.ros.org/rosdistro_cache/noetic-cache.yaml.gz
+    distribution_cache: noetic/distribution-cache.yaml.gz
   rolling:
     distribution: [rolling/distribution.yaml]
     distribution_cache: rolling/distribution-cache.yaml.gz
