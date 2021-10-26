@@ -9773,7 +9773,7 @@ repositories:
     release:
       tags:
         release: release/noetic/{package}/{version}
-      url: https://github.com/ros-gbp/xacro-release.git
+      url: https://github.com/cottsay/xacro-release.git
       version: 1.14.10-1
     source:
       test_pull_requests: true
