@@ -1869,8 +1869,8 @@ repositories:
       - pilz_industrial_motion_planner_testutils
       tags:
         release: release/galactic/{package}/{version}
-      url: https://github.com/moveit/moveit2-release.git
-      version: 2.3.3-1
+      url: https://github.com/cottsay/moveit2-release.git
+      version: 2.3.3-2
     source:
       test_commits: false
       test_pull_requests: false

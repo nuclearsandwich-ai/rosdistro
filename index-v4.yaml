@@ -41,7 +41,7 @@ distributions:
     python_version: 3
   galactic:
     distribution: [galactic/distribution.yaml]
-    distribution_cache: http://repo.ros2.org/rosdistro_cache/galactic-cache.yaml.gz
+    distribution_cache: galactic/galactic-cache.yaml.gz
     distribution_status: active
     distribution_type: ros2
     python_version: 3
