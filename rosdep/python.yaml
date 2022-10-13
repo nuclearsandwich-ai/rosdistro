@@ -8607,6 +8607,7 @@ python3-requests:
   ubuntu: [python3-requests]
 python3-requests-futures:
   debian: [python3-requests-futures]
+  fedora: [python3-requests-futures]
   opensuse: [python3-requests-futures]
   ubuntu: [python3-requests-futures]
 python3-requests-oauthlib:
