@@ -3093,7 +3093,6 @@ libcdd-dev:
 libcegui-mk2-dev:
   arch: [cegui]
   debian: [libcegui-mk2-dev]
-  fedora: [cegui]
   gentoo: [dev-games/cegui]
   nixos: [cegui]
   ubuntu: [libcegui-mk2-dev]
