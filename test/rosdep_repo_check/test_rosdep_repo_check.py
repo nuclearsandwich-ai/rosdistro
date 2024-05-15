@@ -58,11 +58,11 @@ def detect_lines(diffstr):
 
 def get_changed_line_numbers():
     UPSTREAM_NAME = 'unittest_upstream_comparison'
-    DIFF_BRANCH = 'master'
-    DIFF_REPO = 'https://github.com/ros/rosdistro.git'
+    DIFF_BRANCH = 'mock-master'
+    DIFF_REPO = 'https://github.com/cottsay/rosdistro.git'
 
     # See if UPSTREAM_NAME remote is available and use it as it's expected to be setup by CI
-    # Otherwise fall back to origin/master
+    # Otherwise fall back to origin/mock-master
     cmd = 'git config --get remote.%s.url' % UPSTREAM_NAME
     try:
         remote_url = subprocess.check_output(cmd.split()).decode('utf-8').strip()
@@ -72,9 +72,9 @@ def get_changed_line_numbers():
             '%s remote url [%s] is different than %s' % (UPSTREAM_NAME, remote_url, DIFF_REPO)
         base_ref = '%s/%s' % (UPSTREAM_NAME, DIFF_BRANCH)
     except subprocess.CalledProcessError:
-        # No remote so fall back to origin/master
-        print('WARNING: No remote %s detected, falling back to origin master. Make sure it is up to date.' % UPSTREAM_NAME, file=sys.stderr)
-        base_ref = 'origin/master'
+        # No remote so fall back to origin/mock-master
+        print('WARNING: No remote %s detected, falling back to origin mock-master. Make sure it is up to date.' % UPSTREAM_NAME, file=sys.stderr)
+        base_ref = 'origin/mock-master'
 
     cmd = 'git diff --unified=0 %s -- rosdep' % (base_ref,)
     print("Detecting changed rules with '%s'" % (cmd,))
