@@ -382,7 +382,7 @@ boost:
   nixos: [boost]
   openembedded: [boost@openembedded-core]
   opensuse: [libboost_atomic1_66_0-devel, libboost_headers1_66_0-devel, libboost_system1_66_0-devel, libboost_thread1_66_0-devel, libboost_chrono1_66_0-devel, libboost_date_time1_66_0-devel, libboost_serialization1_66_0-devel, libboost_filesystem1_66_0-devel, libboost_program_options1_66_0-devel, libboost_python-py2_7-1_66_0-devel, libboost_python-py3-1_66_0-devel, libboost_signals1_66_0-devel, libboost_regex1_66_0-devel, libboost_iostreams1_66_0-devel]
-  rhel: [boost-devel, 'boost-python%{python3_pkgversion}-devel']
+  rhel: [boost-devel, boost-python3-devel]
   slackware:
     slackpkg:
       packages: [boost]
@@ -544,9 +544,7 @@ clang:
   gentoo: [sys-devel/clang]
   nixos: [clang]
   openembedded: [clang-native@meta-clang]
-  rhel:
-    '*': [clang]
-    '7': null
+  rhel: [clang]
   ubuntu: [clang]
 clang-format:
   alpine: [clang]
@@ -558,9 +556,7 @@ clang-format:
   osx:
     homebrew:
       packages: [clang-format]
-  rhel:
-    '*': [clang-tools-extra, git-clang-format]
-    '7': null
+  rhel: [clang-tools-extra, git-clang-format]
   ubuntu: [clang-format]
 clang-tidy:
   alpine: [clang-extra-tools]
@@ -569,9 +565,7 @@ clang-tidy:
   fedora: [clang-tools-extra]
   gentoo: [sys-devel/clang]
   nixos: [clang]
-  rhel:
-    '*': [clang-tools-extra]
-    '7': null
+  rhel: [clang-tools-extra]
   ubuntu:
     '*': [clang-tidy]
 cmake:
@@ -618,8 +612,6 @@ coinor-libcoinutils-dev:
   fedora: [coin-or-CoinUtils-devel]
   gentoo: [sci-libs/coinor-utils]
   nixos: [cbc]
-  rhel:
-    '7': [coin-or-CoinUtils-devel]
   ubuntu: [coinor-libcoinutils-dev]
 coinor-libipopt-dev:
   arch: [coinor-all]
@@ -627,8 +619,6 @@ coinor-libipopt-dev:
   fedora: [coin-or-Ipopt-devel]
   gentoo: [sci-libs/ipopt]
   nixos: [ipopt]
-  rhel:
-    '7': [coin-or-Ipopt-devel]
   ubuntu: [coinor-libipopt-dev]
 coinor-libosi-dev:
   debian: [coinor-libosi-dev]
@@ -794,7 +784,8 @@ devilspie2:
   fedora: [devilspie2]
   gentoo: [x11-misc/devilspie2]
   nixos: [devilspie2]
-  rhel: [devilspie2]
+  rhel:
+    '8': [devilspie2]
   ubuntu: [devilspie2]
 devscripts:
   debian: [devscripts]
@@ -1197,8 +1188,7 @@ fswebcam:
   fedora: [fswebcam]
   nixos: [fswebcam]
   rhel:
-    '*': [fswebcam]
-    '7': null
+    '8': [fswebcam]
   ubuntu: [fswebcam]
 ftdi-eeprom:
   arch: [libftdi]
@@ -2467,9 +2457,7 @@ libabsl-dev:
   gentoo: [dev-cpp/abseil-cpp]
   nixos: [abseil-cpp]
   openembedded: [abseil-cpp@meta-oe]
-  rhel:
-    '*': [abseil-cpp-devel]
-    '7': null
+  rhel: [abseil-cpp-devel]
   ubuntu:
     '*': [libabsl-dev]
     bionic: null
@@ -2685,9 +2673,7 @@ libboost-coroutine:
   nixos: [boost]
   openembedded: [boost@openembedded-core]
   opensuse: [libboost_coroutine1_66_0]
-  rhel:
-    '*': [boost-coroutine]
-    '7': null
+  rhel: [boost-coroutine]
   ubuntu:
     bionic: [libboost-coroutine1.65.1]
     focal: [libboost-coroutine1.71.0]
@@ -2851,9 +2837,7 @@ libboost-python:
   nixos: [boost]
   openembedded: [boost@openembedded-core]
   opensuse: [libboost_python-py2_7-1_66_0, libboost_python-py3-1_66_0]
-  rhel:
-    '*': [boost-python3]
-    '7': [boost-python, 'boost-python%{python3_pkgversion}']
+  rhel: [boost-python3]
   ubuntu:
     bionic: [libboost-python1.65.1]
     focal: [libboost-python1.71.0]
@@ -2867,9 +2851,7 @@ libboost-python-dev:
   nixos: [boost]
   openembedded: [boost@openembedded-core]
   opensuse: [libboost_python-py2_7-1_66_0-devel, libboost_python-py3-1_66_0-devel]
-  rhel:
-    '*': [boost-python3-devel]
-    '7': [boost-devel, 'boost-python%{python3_pkgversion}-devel']
+  rhel: [boost-python3-devel]
   ubuntu: [libboost-python-dev]
 libboost-random:
   debian:
@@ -3354,9 +3336,7 @@ libespeak-ng1:
   debian: [libespeak-ng1]
   fedora: [espeak-ng]
   opensuse: [libespeak-ng1]
-  rhel:
-    '*': [espeak-ng]
-    '7': null
+  rhel: [espeak-ng]
   ubuntu: [libespeak-ng1]
 libestools-dev:
   debian:
@@ -3411,8 +3391,7 @@ libfcl-dev:
   nixos: [fcl]
   openembedded: [fcl@meta-ros-common]
   rhel:
-    '*': [fcl-devel]
-    '7': null
+    '8': [fcl-devel]
   ubuntu:
     '*': [libfcl-dev]
 libffi-dev:
@@ -3523,9 +3502,7 @@ libfreenect-dev:
   fedora: [libfreenect-devel]
   nixos: [freenect]
   openembedded: [libfreenect@meta-ros-common]
-  rhel:
-    '*': [libfreenect-devel]
-    '7': null
+  rhel: [libfreenect-devel]
   ubuntu: [libfreenect-dev]
 libfreetype-dev:
   alpine: [freetype-dev]
@@ -3823,9 +3800,7 @@ libgpiod-dev:
   gentoo: [dev-libs/libgpiod]
   nixos: [libgpiod]
   opensuse: [libgpiod-devel]
-  rhel:
-    '*': [libgpiod-devel]
-    '7': null
+  rhel: [libgpiod-devel]
   ubuntu: [libgpiod-dev]
 libgps:
   arch: [gpsd]
@@ -4226,9 +4201,7 @@ libkml-dev:
   debian: [libkml-dev]
   fedora: [libkml-devel]
   nixos: [libkml]
-  rhel:
-    '*': [libkml-devel]
-    '7': null
+  rhel: [libkml-devel]
   ubuntu: [libkml-dev]
 liblapack-dev:
   arch: [lapack]
@@ -4389,8 +4362,6 @@ libmongoclient-dev:
   debian: [libmongoclient-dev]
   fedora: [mongo-cxx-driver]
   openembedded: [mongodb@meta-oe]
-  rhel:
-    '7': [mongo-cxx-driver-devel]
   ubuntu: [libmongoclient-dev]
 libmotif-dev:
   arch: [lesstif]
@@ -4622,9 +4593,7 @@ libomp-dev:
   fedora: [libomp-devel]
   gentoo: [sys-libs/libomp]
   nixos: [llvmPackages.openmp]
-  rhel:
-    '*': [libomp-devel]
-    '7': null
+  rhel: [libomp-devel]
   ubuntu: [libomp-dev]
 libopal-dev:
   debian: [libopal-dev]
@@ -4713,9 +4682,7 @@ libopenni2-dev:
   fedora: [openni-devel]
   gentoo: [dev-libs/OpenNI2]
   nixos: [openni2]
-  rhel:
-    '*': [libfreenect-openni]
-    '7': null
+  rhel: [libfreenect-openni]
   ubuntu: [libopenni2-dev]
 libopenscenegraph:
   arch: [openscenegraph]
@@ -4746,9 +4713,7 @@ libopenvdb:
   fedora: [openvdb]
   gentoo: [media-gfx/openvdb]
   nixos: [openvdb]
-  rhel:
-    '*': [openvdb]
-    '7': null
+  rhel: [openvdb]
   ubuntu:
     bionic: [libopenvdb5.0]
     focal: [libopenvdb6.2]
@@ -4759,9 +4724,7 @@ libopenvdb-dev:
   fedora: [openvdb-devel]
   gentoo: [media-gfx/openvdb]
   nixos: [openvdb]
-  rhel:
-    '*': [openvdb-devel]
-    '7': null
+  rhel: [openvdb-devel]
   ubuntu: [libopenvdb-dev, libilmbase-dev]
 libopus-dev:
   alpine: [opus-dev]
@@ -4794,9 +4757,7 @@ liborocos-kdl:
   gentoo: [sci-libs/orocos_kdl]
   nixos: [orocos-kdl]
   openembedded: [orocos-kdl@meta-ros1-noetic]
-  rhel:
-    '*': [orocos-kdl]
-    '7': null
+  rhel: [orocos-kdl]
   ubuntu:
     '*': [liborocos-kdl1.5]
     bionic: [liborocos-kdl1.3]
@@ -4807,9 +4768,7 @@ liborocos-kdl-dev:
   gentoo: [sci-libs/orocos_kdl]
   nixos: [orocos-kdl]
   openembedded: [orocos-kdl@meta-ros1-noetic]
-  rhel:
-    '*': [orocos-kdl-devel]
-    '7': null
+  rhel: [orocos-kdl-devel]
   ubuntu: [liborocos-kdl-dev]
 libosmesa6-dev:
   arch: [mesa]
@@ -5421,9 +5380,7 @@ libqglviewer-dev-qt5:
   gentoo: [x11-libs/libQGLViewer]
   nixos: [libsForQt5.libqglviewer]
   openembedded: [qtbase@meta-qt5]
-  rhel:
-    '*': [libQGLViewer-qt5-devel]
-    '7': null
+  rhel: [libQGLViewer-qt5-devel]
   ubuntu: [libqglviewer-dev-qt5]
 libqglviewer-qt4:
   arch: [libqglviewer-qt4]
@@ -5451,9 +5408,7 @@ libqglviewer2-qt5:
   fedora: [libQGLViewer-qt5]
   gentoo: [x11-libs/libQGLViewer]
   nixos: [libsForQt5.libqglviewer]
-  rhel:
-    '*': [libQGLViewer-qt5]
-    '7': null
+  rhel: [libQGLViewer-qt5]
   ubuntu: [libqglviewer2-qt5]
 libqhull:
   arch: [qhull]
@@ -5495,8 +5450,6 @@ libqt4:
   macports: [qt4-mac]
   nixos: [qt4]
   opensuse: [libqt4]
-  rhel:
-    '7': [qt]
   ubuntu: [libqt4-dbus, libqt4-network, libqt4-script, libqt4-test, libqt4-xml, libqtcore4]
 libqt4-dev:
   arch: [qt4]
@@ -5507,8 +5460,6 @@ libqt4-dev:
   macports: [qt4-mac]
   nixos: [qt4]
   opensuse: [libqt4-devel]
-  rhel:
-    '7': [qt-devel]
   ubuntu: [libqt4-dev]
 libqt4-opengl:
   arch: [qt4]
@@ -5516,8 +5467,6 @@ libqt4-opengl:
   fedora: [qt]
   gentoo: ['dev-qt/qtopengl:4']
   nixos: [qt4]
-  rhel:
-    '7': [qt]
   ubuntu: [libqt4-opengl]
 libqt4-opengl-dev:
   arch: [qt4]
@@ -5527,8 +5476,6 @@ libqt4-opengl-dev:
   macports: [qt4-mac]
   nixos: [qt4]
   opensuse: [libqt4-devel]
-  rhel:
-    '7': [qt-devel]
   ubuntu: [libqt4-opengl-dev]
 libqt4-sql-psql:
   arch: [qt4]
@@ -5738,8 +5685,6 @@ libqtgui4:
   fedora: [qt-x11]
   gentoo: ['dev-qt/qtgui:4']
   nixos: [qt4]
-  rhel:
-    '7': [qt-x11]
   ubuntu: [libqtgui4]
 libqtwebkit-dev:
   arch: [qt5-webkit]
@@ -5755,9 +5700,7 @@ libqwt-qt5-dev:
   gentoo: ['x11-libs/qwt:6']
   nixos: [libsForQt5.qwt]
   openembedded: [qwt-qt5@meta-qt5]
-  rhel:
-    '*': [qwt-qt5-devel]
-    '7': null
+  rhel: [qwt-qt5-devel]
   ubuntu:
     '*': [libqwt-qt5-dev]
 libqwt5-qt4-dev:
@@ -6368,9 +6311,7 @@ libvulkan-dev:
   gentoo: [media-libs/vulkan-loader]
   nixos: [vulkan-loader]
   openembedded: [vulkan-headers@openembedded-core]
-  rhel:
-    '*': [vulkan-loader-devel, vulkan-headers]
-    '7': [vulkan-devel]
+  rhel: [vulkan-loader-devel, vulkan-headers]
   ubuntu:
     '*': [libvulkan-dev]
 libwebp-dev:
@@ -6775,7 +6716,8 @@ log4cxx:
   nixos: [log4cxx]
   openembedded: [log4cxx@meta-ros-common]
   opensuse: [liblog4cxx-devel]
-  rhel: [log4cxx-devel]
+  rhel:
+    '8': [log4cxx-devel]
   slackware: [apache-log4cxx]
   ubuntu:
     '*': [liblog4cxx-dev]
@@ -7253,8 +7195,7 @@ opende:
   gentoo: [dev-games/ode]
   nixos: [ode]
   openembedded: [ode@meta-ros-common]
-  rhel:
-    '8': [ode-devel]
+  rhel: [ode-devel]
   ubuntu: [libode-dev]
 opengl:
   alpine: [mesa-dev]
@@ -7624,9 +7565,7 @@ pybind11-dev:
   gentoo: [dev-python/pybind11]
   nixos: [pythonPackages.pybind11]
   openembedded: [python3-pybind11@meta-python]
-  rhel:
-    '*': [pybind11-devel]
-    '7': null
+  rhel: [pybind11-devel]
   ubuntu: [pybind11-dev]
 pybind11-json-dev:
   debian: [pybind11-json-dev]
@@ -7642,7 +7581,6 @@ python-dev:
   fedora: [python2-devel]
   nixos: [pythonPackages.python]
   rhel:
-    '7': [python2-devel]
     '8': [python2-devel]
   ubuntu:
     '*': [python-dev]
@@ -7769,8 +7707,6 @@ qt4-qmake:
   macports: [qt4-mac]
   nixos: [qt4]
   opensuse: [libqt4-devel]
-  rhel:
-    '7': [qt-devel]
   ubuntu: [qt4-qmake]
 qt5-image-formats-plugins:
   arch: [qt5-imageformats]
@@ -7883,9 +7819,7 @@ range-v3:
   osx:
     homebrew:
       packages: [range-v3]
-  rhel:
-    '*': [range-v3-devel]
-    '7': null
+  rhel: [range-v3-devel]
   ubuntu:
     '*': [librange-v3-dev]
 rapidjson-dev:
@@ -7988,9 +7922,6 @@ sbcl:
   macports: [sbcl]
   nixos: [sbcl]
   opensuse: [sbcl]
-  rhel:
-    '*': null
-    '7': [sbcl]
   slackware: [sbcl]
   ubuntu: [sbcl]
 scons:
@@ -8017,8 +7948,6 @@ sdformat:
   fedora: [sdformat-devel]
   gentoo: [dev-libs/sdformat]
   nixos: [sdformat]
-  rhel:
-    '7': [sdformat-devel]
   ubuntu:
     bionic: [libsdformat6-dev]
     focal: [libsdformat9-dev]
@@ -8064,8 +7993,7 @@ sdl-image:
   nixos: [SDL_image]
   openembedded: [libsdl-image@meta-oe]
   opensuse: [libSDL_image-devel]
-  rhel:
-    '7': [SDL_image-devel]
+  rhel: [SDL_image-devel]
   ubuntu: [libsdl-image1.2-dev]
 sdl-mixer:
   arch: [sdl_mixer]
@@ -8093,8 +8021,7 @@ sdl2:
 sdl2-image:
   debian: [libsdl2-image-dev]
   fedora: [SDL2_image-devel]
-  rhel:
-    '7': [SDL2_image-devel]
+  rhel: [SDL2_image-devel]
   ubuntu: [libsdl2-image-dev]
 sdl2-mixer:
   debian: [libsdl2-mixer-dev]
@@ -8432,9 +8359,6 @@ tar:
   nixos: [libtar]
   openembedded: [tar@openembedded-core]
   opensuse: [libtar-devel]
-  rhel:
-    '*': null
-    '7': [libtar-devel]
   ubuntu: [libtar-dev]
 tbb:
   arch: [intel-tbb]
@@ -8469,7 +8393,8 @@ tesseract-ocr-jpn:
   arch: [tesseract-data-jpn]
   debian: [tesseract-ocr-jpn]
   fedora: [tesseract-langpack-jpn]
-  rhel: [tesseract-langpack-jpn]
+  rhel:
+    '8': [tesseract-langpack-jpn]
   ubuntu: [tesseract-ocr-jpn]
 texlive-fonts-extra:
   arch: [texlive-fontsextra]
@@ -8582,8 +8507,6 @@ touchegg:
 trang:
   debian: [trang]
   gentoo: [app-text/trang]
-  rhel:
-    '7': [trang]
   ubuntu: [trang]
 tree:
   debian: [tree]
@@ -8744,8 +8667,6 @@ v4l-utils:
   gentoo: [media-tv/v4l-utils]
   nixos: [v4l-utils]
   openembedded: [v4l-utils@meta-oe]
-  rhel:
-    '7': [v4l-utils]
   ubuntu: [v4l-utils]
 valgrind:
   debian: [valgrind]
@@ -8859,9 +8780,7 @@ wx-common:
   gentoo: [x11-libs/wxGTK]
   nixos: [wxGTK32]
   openembedded: [wxwidgets@meta-ros-common]
-  rhel:
-    '*': [wxGTK3-devel]
-    '7': [wxGTK-devel]
+  rhel: [wxGTK3-devel]
   ubuntu: [wx-common]
 wxwidgets:
   arch: [wxgtk]
@@ -8876,9 +8795,7 @@ wxwidgets:
   nixos: [wxGTK32]
   openembedded: [wxwidgets@meta-ros-common]
   opensuse: [wxGTK-devel]
-  rhel:
-    '*': [wxGTK3-devel]
-    '7': [wxGTK-devel]
+  rhel: [wxGTK3-devel]
   ubuntu:
     '*': [libwxgtk3.2-dev]
     bionic: [libwxgtk3.0-dev]
@@ -8965,9 +8882,7 @@ xsimd:
   fedora: [xsimd-devel]
   gentoo: [dev-cpp/xsimd]
   nixos: [xsimd]
-  rhel:
-    '*': [xsimd-devel]
-    '7': null
+  rhel: [xsimd-devel]
   ubuntu:
     '*': [libxsimd-dev]
     bionic: null
