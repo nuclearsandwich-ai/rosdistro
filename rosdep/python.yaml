@@ -29,6 +29,10 @@ adafruit-pca9685-pip:
   ubuntu:
     pip:
       packages: [adafruit-pca9685]
+aioraven:
+  '*':
+    pip:
+      packages: [aioraven]
 autograd-pip:
   debian:
     pip:
