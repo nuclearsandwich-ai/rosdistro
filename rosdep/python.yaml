@@ -4851,6 +4851,12 @@ python3-aiohttp-cors:
   fedora: [python-aiohttp-cors]
   gentoo: [dev-python/aiohttp-cors]
   ubuntu: [python3-aiohttp-cors]
+python3-aioraven:
+  ubuntu:
+    '*': [python3-aioraven]
+    trusty:
+      pip:
+        packages: [aioraven]
 python3-aiortc:
   debian:
     bookworm: [python3-aiortc]
