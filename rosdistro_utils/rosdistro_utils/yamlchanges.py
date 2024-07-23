@@ -53,7 +53,7 @@ def get_changed_yaml(path, yaml_path, *, target_ref=None, head_ref=None):
 
     if head_ref is not None:
         data = yaml.load(
-            repo.heads[head_ref].tree[yaml_path].data_stream,
+            repo.tree(head_ref)[yaml_path].data_stream,
             Loader=AnnotatedSafeLoader)
     else:
         with (path / yaml_path).open('r') as f:

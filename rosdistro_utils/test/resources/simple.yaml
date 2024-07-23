@@ -3,8 +3,8 @@ foo:
   bar: baz
   qux: [quux]
   corge:
-    - grault
-    - garply
+  - grault
+  - garply
   waldo: >-
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

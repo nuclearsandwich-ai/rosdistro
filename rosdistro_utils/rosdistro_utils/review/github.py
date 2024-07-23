@@ -20,7 +20,7 @@ RECOMMENDATION_EVENTS = {
 
 def post_review(repo, pr_id, review):
     comments = [
-        ReviewComment(path=a.file, body=a.message, line=a.lines.stop - 1, side='RIGHT', start_line=a.lines.start, start_side='RIGHT')
+        ReviewComment(path=a.file, body=a.message, line=a.lines.stop, side='RIGHT', start_line=a.lines.start, start_side='RIGHT')
         for a in review.annotations
     ]
 
