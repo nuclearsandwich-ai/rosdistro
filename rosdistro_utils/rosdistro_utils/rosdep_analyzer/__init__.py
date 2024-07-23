@@ -267,7 +267,16 @@ class RosdepAnalyzer(ElementAnalyzer):
         _check_platforms(criteria, annotations, changed_rosdeps)
         _check_installers(criteria, annotations, changed_rosdeps)
 
-        return criteria, annotations
+        fixed_annotations = []
+        for annotation in annotations:
+            if isinstance(annotation.file, Path):
+                fixed_annotations.append(Annotation(
+                    str(annotation.file.relative_to(self._rosdistro_path)),
+                    annotation.lines, annotation.message))
+            else:
+                fixed_annotations.append(annotation)
+
+        return criteria, fixed_annotations
 
     def _get_changed_rosdeps(self):
         rosdep_files = self._rosdistro_path.glob('rosdep/*.yaml')
