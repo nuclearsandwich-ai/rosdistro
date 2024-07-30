@@ -4844,9 +4844,14 @@ python3-aiohttp-cors:
   gentoo: [dev-python/aiohttp-cors]
   ubuntu: [python3-aiohttp-cors]
 python3-aioraven-pip:
-  '*':
+  archlinux: [python-aioraven]
+  gentoo:
     pip:
       packages: [aioraven]
+  ubuntu:
+    xenial:
+      pip:
+        packages: [aioraven]
 python3-aiortc:
   debian:
     bookworm: [python3-aiortc]
