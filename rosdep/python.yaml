@@ -4843,6 +4843,13 @@ python3-aiohttp-cors:
   fedora: [python-aiohttp-cors]
   gentoo: [dev-python/aiohttp-cors]
   ubuntu: [python3-aiohttp-cors]
+python3-aioraven:
+  '*':
+    pip:
+      packages: [aioraven] # Should migrate to system package someday
+  archlinux: [python3-aioraven]
+  ubuntu:
+    bionic: [python3-aioraven]
 python3-aiortc:
   debian:
     bookworm: [python3-aiortc]

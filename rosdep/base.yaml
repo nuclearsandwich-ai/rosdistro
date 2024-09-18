@@ -196,6 +196,10 @@ atlas:
   macports: [atlas]
   rhel: [atlas-devel]
   ubuntu: [libatlas-base-dev]
+aunit:
+    fedora: [aunit-devel]
+    ubuntu:
+      noble: [libaunit-dev]
 autoconf:
   arch: [autoconf]
   debian: [autoconf]
