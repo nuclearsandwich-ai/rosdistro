@@ -4854,6 +4854,15 @@ python3-aiortc:
       packages: [aiortc]
   ubuntu:
     jammy: [python3-aiortc]
+python3-aiosignal:
+  '*':
+    pip:
+      packages: [aiosignal] # Should migrate to system package someday
+  archlinux: [python-aiosignal]
+  ubuntu:
+    '*': [python3-aiosignal]
+    bionic: null
+    focal: null
 python3-albumentations-pip:
   debian:
     pip:
