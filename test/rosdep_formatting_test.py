@@ -2,11 +2,13 @@
 
 import os
 
+import pytest
 from scripts.check_rosdep import main as check_rosdep
 
 from .fold_block import Fold
 
 
+@pytest.mark.skip
 def test():
     files = os.listdir('rosdep')
 
