@@ -19,6 +19,6 @@ jobs:
     - uses: actions/checkout@v4
       with:
         fetch-depth: 0
-    - uses: ros-infrastructure/rosdistro-reviewer@cottsay/merge
+    - uses: ros-infrastructure/rosdistro-reviewer@cottsay/more-intro-text
       with:
         token: ${{ github.token }}
