@@ -17,6 +17,8 @@ package_sources:
   - !rpm_mirrorlist_url https://mirrors.fedoraproject.org/mirrorlist?repo=fedora-$releasever&arch=$basearch
   - !rpm_mirrorlist_url https://mirrors.fedoraproject.org/mirrorlist?repo=updates-released-f$releasever&arch=$basearch
   - !rpm_mirrorlist_url https://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-$releasever&arch=$basearch
+  freebsd:
+  - !pkg_root_url https://pkg.FreeBSD.org/${ABI}/latest
   openembedded:
   - !layer_index_url http://layers.openembedded.org/layerindex/api/
   opensuse:
@@ -50,6 +52,8 @@ package_dashboards:
   url: https://packages.debian.org/{os_code_name}/{binary_name}
 - pattern: !regular_expression .*//dl.fedoraproject.org/pub/.*
   url: https://packages.fedoraproject.org/pkgs/{source_name}/{binary_name}/
+- pattern: !regular_expression .*://pkg.FreeBSD.org/.*
+  url: https://cgit.freebsd.org/ports/tree/{source_name}
 - pattern: !regular_expression .*://layers.openembedded.org/layerindex/api/recipes/([^/]+)
   url: https://layers.openembedded.org/layerindex/recipe/\1/
 - pattern: !regular_expression .*//download.opensuse.org/.*
@@ -69,6 +73,8 @@ supported_versions:
   fedora:
   - '39'
   - '40'
+  freebsd:
+  - '15'
   opensuse:
   - '15.2'
   openembedded:
@@ -90,6 +96,8 @@ supported_arches:
   - amd64
   fedora:
   - x86_64
+  freebsd:
+  - amd64
   opensuse:
   - x86_64
   openembedded:

@@ -71,7 +71,9 @@ def is_probably_lzma(response):
 def open_gz_url(url, retry=2, retry_period=1, timeout=10):
     return open_compressed_url(url, retry, retry_period, timeout)
 
-def open_compressed_url(url, retry=2, retry_period=1, timeout=10):
+def open_compressed_url(
+    url, retry=2, retry_period=1, timeout=10, compression=None,
+):
     """
     Open a URL to a possibly compressed file.
 
@@ -79,6 +81,7 @@ def open_compressed_url(url, retry=2, retry_period=1, timeout=10):
     :param retry: number of times to re-attempt the download.
     :param retry_period: number of seconds to wait between retry attempts.
     :param timeout: number of seconds to wait for the remote host to respond.
+    :param compression: type of compression to unconditionally use.
 
     :returns: file-like object for streaming file data.
     """
@@ -100,9 +103,9 @@ def open_compressed_url(url, retry=2, retry_period=1, timeout=10):
                 url, retry=retry - 1, retry_period=retry_period,
                 timeout=timeout)
         raise URLError(str(e) + ' (%s)' % url)
-    if is_probably_gzip(f):
+    if compression == 'gzip' or is_probably_gzip(f):
         return GzipFile(fileobj=f, mode='rb')
-    elif is_probably_lzma(f):
+    elif compression == 'lzma' or is_probably_lzma(f):
         return LZMAFile(f, mode='rb')
     return f
 
