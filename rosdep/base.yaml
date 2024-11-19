@@ -197,10 +197,6 @@ atlas:
   macports: [atlas]
   rhel: [atlas-devel]
   ubuntu: [libatlas-base-dev]
-aunit:
-    fedora: [aunit-devel]
-    ubuntu:
-      noble: [libaunit-dev]
 autoconf:
   arch: [autoconf]
   debian: [autoconf]
@@ -2635,6 +2631,10 @@ libatomic:
       packages: [libatomic_ops]
   rhel: [libatomic]
   ubuntu: [libatomic1]
+libaunit:
+  fedora: [aunit-devel]
+  ubuntu:
+    noble: [libaunit-dev]
 libav:
   arch: [ffmpeg]
   debian: [libav-tools]

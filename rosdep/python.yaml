@@ -4857,11 +4857,10 @@ python3-aiortc:
 python3-aiosignal:
   '*':
     pip:
-      packages: [aiosignal] # Should migrate to system package someday
-  archlinux: [python-aiosignal]
+      packages: [aiosignal]  # Should migrate to system package someday
+  arch: [python-aiosignal]
   ubuntu:
     '*': [python3-aiosignal]
-    bionic: null
     focal: null
 python3-albumentations-pip:
   debian:
