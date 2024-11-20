@@ -585,6 +585,8 @@ python-apparmor:
   debian: [python-apparmor]
   gentoo: ['sys-libs/libapparmor[python]']
   ubuntu: [python-apparmor]
+python-ugh:
+  fedora: [python-ugh]
 python-argcomplete:
   fedora: [python-argcomplete]
   gentoo: [dev-python/argcomplete]
